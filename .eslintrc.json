@@ -1,6 +1,5 @@
 {
   "extends": [
-    "some-other-config-you-use",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/babel",
@@ -22,11 +21,22 @@
   "plugins": [
     "prettier",
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
   ],
 
   "rules": {
-    "prettier/prettier": "error"
-    
+    "prettier/prettier": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+          "newlinesBetween": "always",
+          "groups": [
+              "module",
+              ["parent", "sibling", "index"]
+          ],
+          "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
   }
 }
