@@ -1,4 +1,12 @@
-const theme = {
+interface colorProps {
+  background: string
+}
+
+interface themeProps {
+  colors: colorProps
+}
+
+const theme: themeProps = {
   colors: {
     background: 'black'
   }
