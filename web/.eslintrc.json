@@ -24,12 +24,24 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "prettier"
+        "prettier",
+        "import-helpers"
     ],
     "rules": {
         "prettier/prettier": "error",
         "space-before-function-paren": "off",
         "react/prop-types": "off",
-        "no-use-before-define": "off"
+        "no-use-before-define": "off",
+        "import-helpers/order-imports": [
+          "warn",
+          {
+              "newlinesBetween": "always",
+              "groups": [
+                  "module",
+                  ["parent", "sibling", "index"]
+              ],
+              "alphabetize": { "order": "asc", "ignoreCase": true }
+          }
+      ]
     }
 }
