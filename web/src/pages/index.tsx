@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import React from 'react'
 
+import Header from '../components/Header'
 const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>gledson.dev</title>
       </Head>
-      <main>
-        <h1>hello</h1>
-      </main>
+      <Header />
     </div>
   )
 }
