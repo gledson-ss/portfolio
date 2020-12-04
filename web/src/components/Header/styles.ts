@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components'
 
 interface propsOption {
   actived?: boolean
-  isMobileOption?: boolean
 }
 
 interface propsOptionMenuMobile {
@@ -16,19 +15,6 @@ const fontProza = css`
     src: url('/fonts/proza-libre/ProzaLibre-Medium.ttf');
   }
   font-family: praza;
-`
-const underlineOption = css`
-  margin-top: 2px;
-  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
-  cursor: pointer;
-`
-
-const buttonMenuEffect = css`
-  > #icon {
-    color: ${({ theme }) => theme.colors.white};
-    background-color: ${({ theme }) => theme.colors.orange};
-    transition: background-color 0.6s;
-  }
 `
 
 export const Container = styled.div`
@@ -46,6 +32,8 @@ export const Container = styled.div`
 export const mobileHeader = styled.div`
   display: none;
   @media (max-width: 767px) {
+    #project-header {
+    }
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -56,13 +44,23 @@ export const mobileHeader = styled.div`
   align-items: center;
 `
 
+const buttonMenuEffect = css`
+  #icon {
+    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.orange};
+    border-radius: 20px;
+  }
+`
+
 export const OptionMenuButton = styled.button<propsOption>`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   border: none;
   :focus {
     outline: none;
+  }
+  #project-header {
   }
 
   ${({ actived }) => {
@@ -75,7 +73,6 @@ export const OptionMenuButton = styled.button<propsOption>`
 `
 export const iconOptionButton = styled(IoMenu)`
   color: #fc7c1c;
-  transition: background-color 0.5s;
 `
 export const mobileMenuContainer = styled.div<propsOptionMenuMobile>`
   @media (min-width: 768px) {
@@ -126,20 +123,40 @@ export const OptionsContainer = styled.div`
   width: 480px;
   /* border: 1px solid black; */
 `
+const underlineOption = css`
+  margin-top: 2px;
+  border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
+  cursor: pointer;
+`
+
+const styleMenuHeaderOption = css`
+  justify-content: flex-start;
+  margin: 0 35px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.orange};
+`
+const styleMobileHeader = css`
+  justify-content: flex-end;
+`
 
 export const Option = styled.button<propsOption>`
   display: flex;
-  ${({ isMobileOption }) => {
-    if (!isMobileOption) {
-      return 'height: 27px;'
-    }
-  }}
+  @media (max-width: 767px) {
+    height: 27px;
+    background-color: ${({ theme }) => theme.colors.white};
 
+    ${({ id }) => {
+      if (id === 'mobile-header') {
+        return styleMobileHeader
+      } else {
+        return styleMenuHeaderOption
+      }
+    }}
+  }
+  background-color: ${({ theme }) => theme.colors.white};
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.white};
   border: none;
-  /* border: 1px solid black; */
+
   :focus {
     outline: none;
   }

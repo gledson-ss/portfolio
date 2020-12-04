@@ -61,45 +61,48 @@ const Header: React.FC = () => {
       </St.Container>
 
       <St.mobileHeader>
-        <St.TitleContainer onClick={() => handleUnderlineOptions(0)}>
-          <St.Title>gledson.dev</St.Title>
-        </St.TitleContainer>
-
-        <St.Option actived={false}>
-          <St.DescriptionOption>Projetos</St.DescriptionOption>
-        </St.Option>
-
         <St.OptionMenuButton
           onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
           actived={buttonMenuOptionsActived}
         >
           <St.iconOptionButton size={32} id="icon" />
         </St.OptionMenuButton>
+
+        <St.TitleContainer onClick={() => handleUnderlineOptions(0)}>
+          <St.Title>gledson.dev</St.Title>
+        </St.TitleContainer>
+
+        <St.Option
+          actived={false}
+          onClick={() => setButtonMenuOptionsActived(false)}
+          id="mobile-header"
+        >
+          <St.DescriptionOption>Projetos</St.DescriptionOption>
+        </St.Option>
       </St.mobileHeader>
 
       <St.mobileMenuContainer hasMenuClicked={buttonMenuOptionsActived}>
         <St.Option
-          isMobileOption={true}
-          id="mobile"
           onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          id="menu-options-mobile"
         >
           <St.DescriptionOption>Home</St.DescriptionOption>
         </St.Option>
         <St.Option
-          isMobileOption={true}
           onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          id="menu-options-mobile"
         >
           <St.DescriptionOption>Projetos</St.DescriptionOption>
         </St.Option>
         <St.Option
-          isMobileOption={true}
           onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          id="menu-options-mobile"
         >
           <St.DescriptionOption>Sobre</St.DescriptionOption>
         </St.Option>
         <St.Option
-          isMobileOption={true}
           onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          id="menu-options-mobile"
         >
           <St.DescriptionOption>Contato</St.DescriptionOption>
         </St.Option>
