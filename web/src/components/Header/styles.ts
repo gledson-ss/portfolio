@@ -3,6 +3,11 @@ import styled, { css } from 'styled-components'
 
 interface propsOption {
   actived?: boolean
+  isMobileOption?: boolean
+}
+
+interface propsOptionMenuMobile {
+  hasMenuClicked?: boolean
 }
 
 const fontProza = css`
@@ -18,6 +23,14 @@ const underlineOption = css`
   cursor: pointer;
 `
 
+const buttonMenuEffect = css`
+  > #icon {
+    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.orange};
+    transition: background-color 0.6s;
+  }
+`
+
 export const Container = styled.div`
   display: none;
   @media (min-width: 768px) {
@@ -30,27 +43,58 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const mobileContainer = styled.div`
+export const mobileHeader = styled.div`
   display: none;
   @media (max-width: 767px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+  /* border: 1px solid red; */
   height: 80px;
-  margin: 0 135px;
+  margin: 0 35px;
   justify-content: space-between;
   align-items: center;
 `
 
-export const OptionButton = styled.button`
+export const OptionMenuButton = styled.button<propsOption>`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   border: none;
   :focus {
     outline: none;
   }
+
+  ${({ actived }) => {
+    if (actived) {
+      return buttonMenuEffect
+    }
+  }}
+
   background-color: ${({ theme }) => theme.colors.white};
 `
 export const iconOptionButton = styled(IoMenu)`
   color: #fc7c1c;
+  transition: background-color 0.5s;
 `
+export const mobileMenuContainer = styled.div<propsOptionMenuMobile>`
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  ${({ hasMenuClicked }) => {
+    if (hasMenuClicked) {
+      return 'display: grid;'
+    } else {
+      return 'display: none;'
+    }
+  }}
+
+  height: 200px;
+  /* border: 1px solid green; */
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+`
+
 export const TitleContainer = styled.button`
   display: flex;
   height: 30px;
@@ -85,16 +129,24 @@ export const OptionsContainer = styled.div`
 
 export const Option = styled.button<propsOption>`
   display: flex;
-  height: 27px;
+  ${({ isMobileOption }) => {
+    if (!isMobileOption) {
+      return 'height: 27px;'
+    }
+  }}
+
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
   border: none;
+  /* border: 1px solid black; */
   :focus {
     outline: none;
   }
   :hover {
-    ${underlineOption}
+    @media (min-width: 768px) {
+      ${underlineOption}
+    }
   }
 
   ${({ actived }) => {

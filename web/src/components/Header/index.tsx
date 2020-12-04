@@ -10,6 +10,10 @@ const Header: React.FC = () => {
     false
   ])
 
+  const [buttonMenuOptionsActived, setButtonMenuOptionsActived] = useState<
+    boolean
+  >(false)
+
   function handleUnderlineOptions(clikedOption: number) {
     const auxArray = []
 
@@ -56,22 +60,50 @@ const Header: React.FC = () => {
         </St.OptionsContainer>
       </St.Container>
 
-      <St.mobileContainer>
+      <St.mobileHeader>
         <St.TitleContainer onClick={() => handleUnderlineOptions(0)}>
           <St.Title>gledson.dev</St.Title>
         </St.TitleContainer>
 
-        <St.Option
-          actived={currentOption[1]}
-          onClick={() => handleUnderlineOptions(1)}
-        >
+        <St.Option actived={false}>
           <St.DescriptionOption>Projetos</St.DescriptionOption>
         </St.Option>
 
-        <St.OptionButton>
-          <St.iconOptionButton size={32} />
-        </St.OptionButton>
-      </St.mobileContainer>
+        <St.OptionMenuButton
+          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          actived={buttonMenuOptionsActived}
+        >
+          <St.iconOptionButton size={32} id="icon" />
+        </St.OptionMenuButton>
+      </St.mobileHeader>
+
+      <St.mobileMenuContainer hasMenuClicked={buttonMenuOptionsActived}>
+        <St.Option
+          isMobileOption={true}
+          id="mobile"
+          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+        >
+          <St.DescriptionOption>Home</St.DescriptionOption>
+        </St.Option>
+        <St.Option
+          isMobileOption={true}
+          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+        >
+          <St.DescriptionOption>Projetos</St.DescriptionOption>
+        </St.Option>
+        <St.Option
+          isMobileOption={true}
+          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+        >
+          <St.DescriptionOption>Sobre</St.DescriptionOption>
+        </St.Option>
+        <St.Option
+          isMobileOption={true}
+          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+        >
+          <St.DescriptionOption>Contato</St.DescriptionOption>
+        </St.Option>
+      </St.mobileMenuContainer>
     </>
   )
 }
