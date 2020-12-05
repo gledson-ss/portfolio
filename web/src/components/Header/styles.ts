@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
   height: 80px;
   /* border: 1px solid black; */
-  margin: 0 135px;
+  margin: 0 128px;
   justify-content: space-between;
   align-items: center;
 `
@@ -97,8 +97,9 @@ export const TitleContainer = styled.button`
   height: 30px;
   @media (min-width: 768) {
     width: 50%;
+    justify-content: flex-start;
   }
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: none;
   background-color: ${({ theme }) => theme.colors.white};
