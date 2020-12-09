@@ -51,6 +51,7 @@ export const OptionMenuButton = styled.button<propsOption>`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 2px;
   border: none;
   :focus {
     outline: none;
