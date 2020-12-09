@@ -21,12 +21,12 @@ export const Container = styled.div`
   display: none;
   @media (min-width: 768px) {
     display: flex;
+    height: 80px;
+    padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
-  height: 80px;
-  /* border: 1px solid black; */
-  margin: 0 128px;
-  justify-content: space-between;
-  align-items: center;
 `
 
 export const mobileHeader = styled.div`
@@ -34,9 +34,8 @@ export const mobileHeader = styled.div`
   @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
   }
-
-  height: 80px;
 `
 
 const buttonMenuEffect = css`
@@ -106,7 +105,7 @@ export const TitleContainer = styled.button`
 `
 export const Title = styled.p`
   color: ${({ theme }) => theme.colors.orange};
-  font-size: 24px;
+  font-size: 26px;
   ${fontProza}
   :hover {
     cursor: pointer;
