@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <title>gledson.dev</title>
       </Head>
       <Header />
-      <HomeMain />
+      {/* <HomeMain /> */}
     </div>
   )
 }

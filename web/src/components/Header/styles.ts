@@ -32,16 +32,11 @@ export const Container = styled.div`
 export const mobileHeader = styled.div`
   display: none;
   @media (max-width: 767px) {
-    #project-header {
-    }
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  /* border: 1px solid red; */
+
   height: 80px;
-  margin: 0 35px;
-  justify-content: space-between;
-  align-items: center;
 `
 
 const buttonMenuEffect = css`
@@ -94,15 +89,15 @@ export const mobileMenuContainer = styled.div<propsOptionMenuMobile>`
 
 export const TitleContainer = styled.button`
   display: flex;
-  height: 30px;
+  height: 100%;
+  align-items: center;
   @media (min-width: 768) {
     width: 50%;
     justify-content: flex-start;
   }
-  justify-content: center;
-  align-items: center;
-  border: none;
+
   background-color: ${({ theme }) => theme.colors.white};
+  border: none;
   :focus,
   :active {
     outline: none;
@@ -121,7 +116,13 @@ export const OptionsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 480px;
+  @media (min-width: 768px) {
+    width: 480px;
+  }
+  @media (max-width: 767px) {
+    justify-content: flex-end;
+    padding-right: 2px;
+  }
   /* border: 1px solid black; */
 `
 const underlineOption = css`

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  border: 1px solid red;
   margin-top: 80px;
   display: flex;
   flex-direction: row;

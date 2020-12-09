@@ -72,13 +72,15 @@ const Header: React.FC = () => {
           <St.Title>gledson.dev</St.Title>
         </St.TitleContainer>
 
-        <St.Option
-          actived={false}
-          onClick={() => setButtonMenuOptionsActived(false)}
-          id="mobile-header"
-        >
-          <St.DescriptionOption>Projetos</St.DescriptionOption>
-        </St.Option>
+        <St.OptionsContainer>
+          <St.Option
+            actived={false}
+            onClick={() => setButtonMenuOptionsActived(false)}
+            id="mobile-header"
+          >
+            <St.DescriptionOption>Projetos</St.DescriptionOption>
+          </St.Option>
+        </St.OptionsContainer>
       </St.mobileHeader>
 
       <St.mobileMenuContainer hasMenuClicked={buttonMenuOptionsActived}>
