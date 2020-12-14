@@ -82,7 +82,7 @@ export const mobileMenuContainer = styled.div<propsOptionMenuMobile>`
     }
   }}
 
-  height: 200px;
+  height: 150px;
   /* border: 1px solid green; */
   grid-template-rows: 1fr 1fr 1fr 1fr;
 `
