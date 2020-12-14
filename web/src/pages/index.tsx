@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       </Head>
       <Header />
 
-      {/* <HomeMain /> */}
+      <HomeMain />
     </div>
   )
 }
