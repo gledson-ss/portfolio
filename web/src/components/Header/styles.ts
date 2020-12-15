@@ -25,7 +25,7 @@ export const Container = styled.div`
     padding: 0 100px;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    border: 1px solid red;
   }
 `
 

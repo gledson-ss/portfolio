@@ -5,34 +5,42 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100%;
-  border: 1px solid yellow;
+  @media (min-width: 768px) {
+    width: 68vw;
+    height: 711px;
+    border: 3px solid black;
+  }
 `
 export const ImageContainer = styled.div``
 
 export const backgroundImage = styled(Image)`
   position: absolute;
-  left: 0;
   @media (max-width: 480px) {
     width: 100%;
     height: 60vw;
+  }
+  @media (min-width: 768px) {
+    width: 814px;
+    height: 711px;
+    border: 1px solid red;
   }
 `
 
 export const InfoContainer = styled.div`
   display: grid;
-  border: 1px solid orange;
+  position: relative;
   grid-template-areas:
     'text text'
     'option nada';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  @media (min-width: 768px) {
+    width: 70vw;
+    height: 711px;
+  }
   width: 100%;
-  height: 100%;
-  position: relative;
 `
 export const TextContainer = styled.div`
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
