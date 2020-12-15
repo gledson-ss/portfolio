@@ -4,17 +4,22 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  position: relative;
+
   @media (min-width: 768px) {
     width: 68vw;
     height: 711px;
     border: 3px solid black;
   }
+  @media (max-width: 767px) {
+    position: relative;
+  }
 `
 export const ImageContainer = styled.div``
 
 export const backgroundImage = styled(Image)`
-  position: absolute;
+  @media (max-width: 767px) {
+    position: absolute;
+  }
   @media (max-width: 480px) {
     width: 100%;
     height: 60vw;
@@ -34,11 +39,13 @@ export const InfoContainer = styled.div`
     'option nada';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
   @media (min-width: 768px) {
     width: 70vw;
     height: 711px;
   }
-  width: 100%;
 `
 export const TextContainer = styled.div`
   display: flex;

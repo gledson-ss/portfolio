@@ -1,13 +1,21 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 
+export const Main = styled.main`
+  border: 4px solid purple;
+  @media (min-width: 768px) {
+    height: calc(100vh - 80px);
+  }
+`
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 25% 75%;
   margin-top: 80px;
-  height: 60vw;
+  @media (max-width: 767px) {
+    height: 60vw;
+  }
 `
-export const Main = styled.main``
 
 export const ProfileContainer = styled.div`
   display: flex;
