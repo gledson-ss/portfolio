@@ -25,7 +25,6 @@ export const Container = styled.div`
     padding: 0 100px;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
   }
 `
 

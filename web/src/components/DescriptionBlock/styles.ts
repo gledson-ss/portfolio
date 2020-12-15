@@ -6,28 +6,34 @@ export const Container = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    width: 68vw;
-    height: 711px;
-    border: 3px solid black;
+    /* border: 4px solid black; */
+    padding-top: 40px;
   }
   @media (max-width: 767px) {
     position: relative;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 80px;
   }
 `
 export const ImageContainer = styled.div``
 
 export const backgroundImage = styled(Image)`
-  @media (max-width: 767px) {
-    position: absolute;
-  }
   @media (max-width: 480px) {
     width: 100%;
     height: 60vw;
   }
+  @media (max-width: 767px) {
+    position: absolute;
+  }
+
   @media (min-width: 768px) {
-    width: 814px;
-    height: 711px;
-    border: 1px solid red;
+    width: 44vw;
+    height: 37vw;
+  }
+  @media (min-width: 1800px) {
+    width: 820px;
+    height: 700px;
   }
 `
 
@@ -39,12 +45,14 @@ export const InfoContainer = styled.div`
     'option nada';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  /* border: 2px solid violet; */
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 44vw;
+    height: 37vw;
+  }
   @media (max-width: 767px) {
     width: 100%;
-  }
-  @media (min-width: 768px) {
-    width: 70vw;
-    height: 711px;
   }
 `
 export const TextContainer = styled.div`
@@ -59,7 +67,9 @@ export const Text = styled.p`
   @media (max-width: 767px) {
     font-size: 3vw;
   }
-
+  @media (min-width: 768px) {
+    font-size: 1.6vw;
+  }
   @font-face {
     font-family: Proza;
     src: url('./fonts/proza-libre/ProzaLibre-Regular.ttf');

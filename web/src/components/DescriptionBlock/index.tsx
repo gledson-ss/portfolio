@@ -10,6 +10,7 @@ const DescriptionBlock: React.FC = () => {
       <St.ImageContainer>
         <St.backgroundImage src={vector} unsized={true}></St.backgroundImage>
       </St.ImageContainer>
+
       <St.InfoContainer>
         <St.TextContainer>
           <St.Text>Olá, meu nome é Gledson</St.Text>
@@ -17,6 +18,7 @@ const DescriptionBlock: React.FC = () => {
           <St.Text>Sou desenvolvedor fullstack</St.Text>
           <St.Text>Sou desenvolvedor fullstack</St.Text>
           <St.Text>Sou desenvolvedor fullstack</St.Text>
+          <St.Text>Desenvolvi este site utilizando Next.js</St.Text>
         </St.TextContainer>
         <ProjectSeeButton />
       </St.InfoContainer>
