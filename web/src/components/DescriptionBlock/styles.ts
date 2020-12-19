@@ -29,7 +29,7 @@ export const backgroundImage = styled(Image)`
 
   @media (min-width: 768px) {
     width: 44vw;
-    height: 37vw;
+    height: 75vh;
   }
   @media (min-width: 1800px) {
     width: 820px;
@@ -45,11 +45,11 @@ export const InfoContainer = styled.div`
     'option nada';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
-  /* border: 2px solid violet; */
+  border: 2px solid violet;
   @media (min-width: 768px) {
     position: absolute;
     width: 44vw;
-    height: 37vw;
+    height: 75vh;
   }
   @media (max-width: 767px) {
     width: 100%;
