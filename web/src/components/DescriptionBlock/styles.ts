@@ -45,7 +45,6 @@ export const InfoContainer = styled.div`
     'option nada';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
-  border: 2px solid violet;
   @media (min-width: 768px) {
     position: absolute;
     width: 44vw;

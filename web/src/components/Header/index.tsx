@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 
 import * as St from './styles'
@@ -14,6 +15,13 @@ const Header: React.FC = () => {
     boolean
   >(false)
 
+  const router = useRouter()
+
+  function handleClickAbout(indexOption: number, path: string) {
+    handleUnderlineOptions(indexOption)
+    router.push(path)
+  }
+
   function handleUnderlineOptions(clikedOption: number) {
     const auxArray = []
 
@@ -29,31 +37,31 @@ const Header: React.FC = () => {
   return (
     <>
       <St.Container>
-        <St.TitleContainer onClick={() => handleUnderlineOptions(0)}>
+        <St.TitleContainer onClick={() => handleClickAbout(0, '/')}>
           <St.Title>gledson.dev</St.Title>
         </St.TitleContainer>
         <St.OptionsContainer>
           <St.Option
             actived={currentOption[0]}
-            onClick={() => handleUnderlineOptions(0)}
+            onClick={() => handleClickAbout(0, '/')}
           >
             <St.DescriptionOption>Home</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[1]}
-            onClick={() => handleUnderlineOptions(1)}
+            onClick={() => handleClickAbout(1, '/projects')}
           >
             <St.DescriptionOption>Projetos</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[2]}
-            onClick={() => handleUnderlineOptions(2)}
+            onClick={() => handleClickAbout(2, '/about')}
           >
             <St.DescriptionOption>Sobre</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[3]}
-            onClick={() => handleUnderlineOptions(3)}
+            onClick={() => handleClickAbout(3, '/contact')}
           >
             <St.DescriptionOption>Contato</St.DescriptionOption>
           </St.Option>

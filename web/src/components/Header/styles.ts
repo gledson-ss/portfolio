@@ -25,6 +25,7 @@ export const Container = styled.div`
     padding: 0 100px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 `
 
@@ -50,7 +51,9 @@ export const OptionMenuButton = styled.button<propsOption>`
   justify-content: flex-start;
   align-items: center;
   padding-left: 2px;
+
   border: none;
+
   :focus {
     outline: none;
   }
@@ -62,8 +65,6 @@ export const OptionMenuButton = styled.button<propsOption>`
       return buttonMenuEffect
     }
   }}
-
-  background-color: ${({ theme }) => theme.colors.white};
 `
 export const iconOptionButton = styled(IoMenu)`
   color: #fc7c1c;
@@ -141,6 +142,10 @@ const styleMobileHeader = css`
 
 export const Option = styled.button<propsOption>`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
   @media (max-width: 767px) {
     height: 27px;
     background-color: ${({ theme }) => theme.colors.white};
@@ -153,10 +158,6 @@ export const Option = styled.button<propsOption>`
       }
     }}
   }
-  background-color: ${({ theme }) => theme.colors.white};
-  justify-content: center;
-  align-items: center;
-  border: none;
 
   :focus {
     outline: none;
@@ -177,4 +178,5 @@ export const Option = styled.button<propsOption>`
 export const DescriptionOption = styled.p`
   color: ${({ theme }) => theme.colors.black};
   font-size: 18px;
+  opacity: 100%;
 `
