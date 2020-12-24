@@ -51,13 +51,72 @@ export const Message = styled.p`
     src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
+  color: ${({ theme }) => theme.colors.black};
 `
+
 export const ContactMenuContainer = styled.main`
   border: 1px solid black;
   display: grid;
   grid-template-columns: 30% 30% 40%;
+  padding-top: 40px;
 `
+
 export const InfoContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  height: 60vh;
   border: 1px solid red;
 `
+
+export const BlockContaint = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: 2px solid blue;
+`
+
+export const TitleContainer = styled.div`
+  display: flex;
+  padding: 8px 0;
+`
+
+export const Title = styled.p`
+  font-size: 24px;
+  @font-face {
+    font-family: proza;
+    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+  }
+  font-family: proza;
+  color: ${({ theme }) => theme.colors.black};
+`
+
+export const DescriptionContainer = styled.div`
+  display: flex;
+  padding: 8px 0;
+`
+
+export const TextDescription = styled.p`
+  font-size: 18px;
+  @font-face {
+    font-family: open;
+    src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
+  }
+  font-family: open;
+  color: ${({ theme }) => theme.colors.darkGray};
+`
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+`
+
+export const SocialIcon = styled(Image)`
+  width: 30px;
+  height: 30px;
+`
+
+export const VectorContainer = styled.div``
+
+export const Vector = styled(Image)``
