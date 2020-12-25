@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
 import * as St from './styles'
 
-const ProjectSeeButton: React.FC = () => {
+type buttonProps = ButtonHTMLAttributes<string>
+
+const ProjectSeeButton: React.FC<buttonProps> = ({ type }) => {
   return (
     <St.Container>
-      <St.Button onClick={() => console.log('clicou')}>
+      <St.Button type={type}>
         <St.ButtonText>Veja meus projetos</St.ButtonText>
       </St.Button>
     </St.Container>
