@@ -29,11 +29,7 @@ export const backgroundImage = styled(Image)`
 
   @media (min-width: 768px) {
     width: 44vw;
-    height: 75vh;
-  }
-  @media (min-width: 1800px) {
-    width: 820px;
-    height: 700px;
+    height: 67vh;
   }
 `
 
@@ -48,11 +44,12 @@ export const InfoContainer = styled.div`
   @media (min-width: 768px) {
     position: absolute;
     width: 44vw;
-    height: 75vh;
+    height: 67vh;
   }
   @media (max-width: 767px) {
     width: 100%;
   }
+  border: 2px solid black;
 `
 export const TextContainer = styled.div`
   display: flex;
