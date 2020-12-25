@@ -1,5 +1,6 @@
 import React from 'react'
 
+import FormInput from '../components/FormInput'
 import * as St from '../styles/pages/contact'
 const Contact: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const Contact: React.FC = () => {
               <St.Title>Meu e-mail</St.Title>
             </St.TitleContainer>
             <St.DescriptionContainer>
-              <St.TextDescription>ola@gledson.dev</St.TextDescription>
+              <St.TextDescription>contato@gledson.dev</St.TextDescription>
             </St.DescriptionContainer>
           </St.BlockContaint>
           <St.BlockContaint>
@@ -47,6 +48,12 @@ const Contact: React.FC = () => {
             </St.DescriptionContainer>
           </St.BlockContaint>
         </St.InfoContainer>
+        <St.VectorContainer>
+          <St.Vector src={'/vectors/shapeCenter.svg'} unsized={true} />
+        </St.VectorContainer>
+        <St.FormContainer>
+          <FormInput />
+        </St.FormContainer>
       </St.ContactMenuContainer>
     </St.Container>
   )

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const ContactMessageContainer = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 18vh;
+  height: 16vh;
   border: 1px solid green;
 `
 export const MessageImageContainer = styled.div`
@@ -57,8 +57,7 @@ export const Message = styled.p`
 export const ContactMenuContainer = styled.main`
   border: 1px solid black;
   display: grid;
-  grid-template-columns: 30% 30% 40%;
-  padding-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
 `
 
 export const InfoContainer = styled.div`
@@ -78,7 +77,7 @@ export const BlockContaint = styled.div`
 
 export const TitleContainer = styled.div`
   display: flex;
-  padding: 8px 0;
+  padding: 10px 0;
 `
 
 export const Title = styled.p`
@@ -93,7 +92,7 @@ export const Title = styled.p`
 
 export const DescriptionContainer = styled.div`
   display: flex;
-  padding: 8px 0;
+  padding: 3vh 0;
 `
 
 export const TextDescription = styled.p`
@@ -109,7 +108,7 @@ export const TextDescription = styled.p`
 export const IconContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 50%;
 `
 
 export const SocialIcon = styled(Image)`
@@ -117,6 +116,20 @@ export const SocialIcon = styled(Image)`
   height: 30px;
 `
 
-export const VectorContainer = styled.div``
+export const VectorContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
-export const Vector = styled(Image)``
+export const Vector = styled(Image)`
+  @media (min-width: 1440px) {
+    width: 450px;
+    height: 450px;
+  }
+`
+
+export const FormContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
