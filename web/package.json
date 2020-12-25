@@ -9,6 +9,8 @@
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
+    "@unform/core": "^2.1.3",
+    "@unform/web": "^2.1.3",
     "next": "10.0.0",
     "next-images": "^1.6.2",
     "react": "17.0.1",
