@@ -155,16 +155,21 @@ export const VectorContainer = styled.div`
 
 export const Vector = styled(Image)`
   border: 1px solid orange;
-  @media (min-width: 1201px) {
-    width: 320px;
-    height: 320px;
+
+  @media (min-width: 1001px) {
+    width: 220px;
+    height: 220px;
+  }
+  @media (min-width: 1200px) {
+    width: 340px;
+    height: 340px;
   }
   @media (min-width: 1440px) {
     width: 450px;
     height: 450px;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `
