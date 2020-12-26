@@ -4,6 +4,7 @@ export const Container = styled.div``
 
 export const Form = styled.form`
   border: 1px solid orange;
+  width: 80%;
   height: 63vh;
   display: flex;
   flex-direction: column;
@@ -47,8 +48,7 @@ const borders = css`
 
 export const TextArea = styled.textarea`
   display: flex;
-  width: 400px;
-  height: 11vh;
+  height: 14vh;
   padding: 10px;
 
   ${borders}
