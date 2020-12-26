@@ -26,7 +26,6 @@ export const ContactMessageContainer = styled.section`
   align-items: center;
   width: 100%;
   height: 13vh;
-  border: 1px solid green;
 `
 export const MessageImageContainer = styled.div`
   /* border: 1px solid violet; */
@@ -68,7 +67,6 @@ export const Message = styled.p`
 `
 
 export const ContactMenuContainer = styled.main`
-  border: 1px solid black;
   height: 63vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -78,7 +76,6 @@ export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 60vh;
-  border: 1px solid red;
 `
 
 export const BlockContaint = styled.div`
@@ -86,7 +83,6 @@ export const BlockContaint = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
-  border: 2px solid blue;
 `
 
 export const TitleContainer = styled.div`
@@ -150,12 +146,9 @@ export const VectorContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 `
 
 export const Vector = styled(Image)`
-  border: 1px solid orange;
-
   @media (min-width: 1001px) {
     width: 220px;
     height: 220px;

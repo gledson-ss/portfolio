@@ -3,8 +3,7 @@ import styled, { css } from 'styled-components'
 export const Container = styled.div``
 
 export const Form = styled.form`
-  border: 1px solid orange;
-  width: 80%;
+  width: 90%;
   height: 63vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@ export const Form = styled.form`
 export const SectionInput = styled.section`
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
 `
 
 export const TitleInputContainer = styled.div`

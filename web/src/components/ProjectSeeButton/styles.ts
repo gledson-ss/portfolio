@@ -5,7 +5,6 @@ export const Container = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   grid-area: option;
-  border: 1px solid red;
 `
 
 export const Button = styled.button`
