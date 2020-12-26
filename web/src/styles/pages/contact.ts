@@ -156,8 +156,8 @@ export const VectorContainer = styled.div`
 export const Vector = styled(Image)`
   border: 1px solid orange;
   @media (min-width: 1201px) {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
   @media (min-width: 1440px) {
     width: 450px;
