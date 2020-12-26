@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -12,20 +12,20 @@ export const TopImageContainer = styled.div`
   }
   display: flex;
   justify-content: flex-end;
-  width: 100%;
   position: absolute;
+  right: 0px;
   top: 0px;
   z-index: -1;
 `
 export const TopImage = styled(Image)`
-  width: 378px;
+  width: 280px;
   height: 200px;
 `
 export const ContactMessageContainer = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 16vh;
+  height: 13vh;
   border: 1px solid green;
 `
 export const MessageImageContainer = styled.div`
@@ -56,6 +56,7 @@ export const Message = styled.p`
 
 export const ContactMenuContainer = styled.main`
   border: 1px solid black;
+  height: 63vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 `
@@ -119,6 +120,7 @@ export const SocialIcon = styled(Image)`
 export const VectorContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 `
 
 export const Vector = styled(Image)`
@@ -132,4 +134,15 @@ export const FormContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 63vh;
+  border: 1px solid red;
+`
+
+export const VectorFooterContainer = styled.div`
+  border: 1px solid red;
+  margin-left: -100px;
+`
+export const VectorFooter = styled(Image)`
+  width: 20px;
+  height: 20px;
 `

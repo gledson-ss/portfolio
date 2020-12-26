@@ -55,6 +55,9 @@ const Contact: React.FC = () => {
           <FormInput />
         </St.FormContainer>
       </St.ContactMenuContainer>
+      {/* <St.VectorFooterContainer>
+        <St.VectorFooter src="/vectors/Ellipse3.svg" unsized={true} />
+      </St.VectorFooterContainer> */}
     </St.Container>
   )
 }
