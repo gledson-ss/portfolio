@@ -139,10 +139,14 @@ export const FormContainer = styled.div`
 `
 
 export const VectorFooterContainer = styled.div`
-  border: 1px solid red;
   margin-left: -100px;
+  height: 14vh;
+  position: relative;
 `
 export const VectorFooter = styled(Image)`
-  width: 20px;
-  height: 20px;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
 `
