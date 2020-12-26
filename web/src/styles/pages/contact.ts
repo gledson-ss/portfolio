@@ -102,6 +102,10 @@ export const Title = styled.p`
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};
+
+  @media (max-width: 1440px) {
+    font-size: 20px;
+  }
 `
 
 export const DescriptionContainer = styled.div`
@@ -117,6 +121,9 @@ export const TextDescription = styled.p`
   }
   font-family: open;
   color: ${({ theme }) => theme.colors.darkGray};
+  @media (max-width: 1440px) {
+    font-size: 14px;
+  }
 `
 
 export const IconContainer = styled.div`
@@ -128,18 +135,37 @@ export const IconContainer = styled.div`
 export const SocialIcon = styled(Image)`
   width: 30px;
   height: 30px;
+
+  @media (max-width: 1440px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media (max-width: 1220px) {
+    width: 20px;
+    height: 20px;
+  }
 `
 
 export const VectorContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 `
 
 export const Vector = styled(Image)`
+  border: 1px solid orange;
+  @media (min-width: 1201px) {
+    width: 350px;
+    height: 350px;
+  }
   @media (min-width: 1440px) {
     width: 450px;
     height: 450px;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 `
 
