@@ -36,8 +36,11 @@ export const MessageImageContainer = styled.div`
 export const MessageImage = styled(Image)`
   width: 100px;
   height: 80px;
-  /* border: 1px solid red; */
   margin-left: -10.5px;
+  @media (max-width: 1440px) {
+    width: 85px;
+    height: 62px;
+  }
 `
 
 export const MessageContainer = styled.div`
@@ -52,6 +55,9 @@ export const Message = styled.p`
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};
+  @media (max-width: 1440px) {
+    font-size: 28px;
+  }
 `
 
 export const ContactMenuContainer = styled.main`
