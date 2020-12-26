@@ -135,7 +135,6 @@ export const FormContainer = styled.div`
   align-items: center;
   flex-direction: column;
   height: 63vh;
-  border: 1px solid red;
 `
 
 export const VectorFooterContainer = styled.div`
