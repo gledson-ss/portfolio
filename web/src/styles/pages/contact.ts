@@ -41,6 +41,10 @@ export const MessageImage = styled(Image)`
     width: 85px;
     height: 62px;
   }
+  @media (max-width: 1279px) {
+    width: 70px;
+    height: 52px;
+  }
 `
 
 export const MessageContainer = styled.div`
@@ -57,6 +61,9 @@ export const Message = styled.p`
   color: ${({ theme }) => theme.colors.black};
   @media (max-width: 1440px) {
     font-size: 28px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 24px;
   }
 `
 
