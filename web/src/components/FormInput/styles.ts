@@ -48,7 +48,7 @@ const borders = css`
 export const TextArea = styled.textarea`
   display: flex;
   width: 400px;
-  height: 50px;
+  height: 11vh;
   padding: 10px;
 
   ${borders}
@@ -59,7 +59,8 @@ export const TextArea = styled.textarea`
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
-  font-size: 18px;
+  font-size: 1vw;
+
   :focus {
     outline: none;
     border-color: ${({ theme }) => theme.colors.orange};

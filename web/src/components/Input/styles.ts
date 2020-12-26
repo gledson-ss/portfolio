@@ -9,7 +9,7 @@ const borders = css`
 export const Container = styled.input`
   display: flex;
   width: 100%;
-  height: 30px;
+  height: 5.2vh;
   padding-left: 16px;
   ${borders}
 
@@ -19,7 +19,7 @@ export const Container = styled.input`
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
-  font-size: 18px;
+  font-size: 1vw;
   :focus {
     outline: none;
     border-color: ${({ theme }) => theme.colors.orange};
