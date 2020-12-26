@@ -51,9 +51,7 @@ export const OptionMenuButton = styled.button<propsOption>`
   justify-content: flex-start;
   align-items: center;
   padding-left: 2px;
-
   border: none;
-
   :focus {
     outline: none;
   }
@@ -65,6 +63,7 @@ export const OptionMenuButton = styled.button<propsOption>`
       return buttonMenuEffect
     }
   }}
+  background-color: transparent;
 `
 export const iconOptionButton = styled(IoMenu)`
   color: #fc7c1c;
@@ -91,13 +90,14 @@ export const TitleContainer = styled.button`
   display: flex;
   height: 100%;
   align-items: center;
+  border: none;
   @media (min-width: 768) {
     width: 50%;
     justify-content: flex-start;
   }
 
   background-color: ${({ theme }) => theme.colors.white};
-  border: none;
+
   :focus,
   :active {
     outline: none;
