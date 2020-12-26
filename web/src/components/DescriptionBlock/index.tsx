@@ -1,7 +1,7 @@
 import React from 'react'
 
 import vector from '../../assets/vectors/Vector1.png'
-import ProjectSeeButton from '../ProjectSeeButton'
+import Button from '../ProjectSeeButton'
 import * as St from './styles'
 
 const DescriptionBlock: React.FC = () => {
@@ -20,7 +20,7 @@ const DescriptionBlock: React.FC = () => {
           <St.Text>Sou desenvolvedor fullstack</St.Text>
           <St.Text>Desenvolvi este site utilizando Next.js</St.Text>
         </St.TextContainer>
-        <ProjectSeeButton />
+        <Button info="Veja meus projetos" />
       </St.InfoContainer>
     </St.Container>
   )

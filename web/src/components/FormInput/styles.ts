@@ -2,7 +2,10 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div``
 
-export const Form = styled.form``
+export const Form = styled.form`
+  border: 1px solid orange;
+  height: 63vh;
+`
 
 export const SectionInput = styled.section`
   display: flex;
