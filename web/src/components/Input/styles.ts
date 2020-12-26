@@ -8,8 +8,8 @@ const borders = css`
 
 export const Container = styled.input`
   display: flex;
-  width: 400px;
-  height: 46px;
+  width: 100%;
+  height: 30px;
   padding-left: 16px;
   ${borders}
 

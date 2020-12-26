@@ -5,12 +5,15 @@ export const Container = styled.div``
 export const Form = styled.form`
   border: 1px solid orange;
   height: 63vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const SectionInput = styled.section`
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  border: 1px solid green;
 `
 
 export const TitleInputContainer = styled.div`
@@ -24,6 +27,9 @@ export const TitleInput = styled.label`
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
+  @media (max-width: 1440px) {
+    font-size: 14px;
+  }
 `
 export const InputMessageContainer = styled.div`
   display: flex;
@@ -42,7 +48,7 @@ const borders = css`
 export const TextArea = styled.textarea`
   display: flex;
   width: 400px;
-  height: 136px;
+  height: 50px;
   padding: 10px;
 
   ${borders}
