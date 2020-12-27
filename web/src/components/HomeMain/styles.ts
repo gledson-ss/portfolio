@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Main = styled.main`
   @media (min-width: 768px) {
-    height: calc(100vh - 80px);
+    height: 100%;
     display: flex;
     align-items: center;
   }
@@ -44,7 +44,7 @@ export const ProfileContainer = styled.div`
 export const ProfilePhoto = styled(Image)`
   @media (min-width: 768px) {
     width: 13vw;
-    height: 16vw;
+    height: 15vw;
     border-radius: 10px;
   }
 
