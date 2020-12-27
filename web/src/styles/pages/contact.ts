@@ -213,8 +213,10 @@ export const Vector = styled(Image)`
 
 export const FormContainer = styled.div`
   display: flex;
-  align-items: center;
+
+  align-items: flex-end;
   flex-direction: column;
+
   height: 63vh;
 `
 
