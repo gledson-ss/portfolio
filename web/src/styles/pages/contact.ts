@@ -56,8 +56,7 @@ export const MessageImage = styled(Image)`
     height: 52px;
   }
   @media (max-width: 719px) {
-    width: 55px;
-    height: 45px;
+    width: 60px;
   }
 `
 
@@ -81,7 +80,7 @@ export const Message = styled.p`
     font-size: 24px;
   }
   @media (max-width: 719px) {
-    font-size: 5.2vw;
+    font-size: 5.4vw;
   }
 `
 
@@ -131,7 +130,7 @@ export const Title = styled.p`
     font-size: 20px;
   }
   @media (max-width: 719px) {
-    font-size: 5.2vw;
+    font-size: 5.4vw;
   }
 `
 
@@ -155,7 +154,7 @@ export const TextDescription = styled.p`
     font-size: 14px;
   }
   @media (max-width: 719px) {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 `
 
@@ -180,6 +179,10 @@ export const SocialIcon = styled(Image)`
   @media (max-width: 1220px) {
     width: 20px;
     height: 20px;
+  }
+  @media (max-width: 719px) {
+    width: 25px;
+    height: 25px;
   }
 `
 
@@ -231,3 +234,5 @@ export const VectorFooter = styled(Image)`
   z-index: -1;
   position: absolute;
 `
+
+export const Link = styled.a``

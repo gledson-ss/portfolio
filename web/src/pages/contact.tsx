@@ -40,10 +40,24 @@ const Contact: React.FC = () => {
             </St.TitleContainer>
             <St.DescriptionContainer>
               <St.IconContainer>
-                <St.SocialIcon src={'/social/github.svg'} unsized={true} />
-                <St.SocialIcon src={'/social/twitter.svg'} unsized={true} />
-                <St.SocialIcon src={'/social/linkedin.svg'} unsized={true} />
-                <St.SocialIcon src={'/social/instagram.svg'} unsized={true} />
+                <St.Link href="https://github.com/gledson-ss" target="blank">
+                  <St.SocialIcon src={'/social/github.svg'} unsized={true} />
+                </St.Link>
+                <St.Link href="https://twitter.com/gledsonDev" target="blank">
+                  <St.SocialIcon src={'/social/twitter.svg'} unsized={true} />
+                </St.Link>
+                <St.Link
+                  href="https://www.linkedin.com/in/gledson-santos-de-souza-abb096196"
+                  target="blank"
+                >
+                  <St.SocialIcon src={'/social/linkedin.svg'} unsized={true} />
+                </St.Link>
+                <St.Link
+                  href="https://www.instagram.com/gledson.js/"
+                  target="blank"
+                >
+                  <St.SocialIcon src={'/social/instagram.svg'} unsized={true} />
+                </St.Link>
               </St.IconContainer>
             </St.DescriptionContainer>
           </St.BlockContaint>
