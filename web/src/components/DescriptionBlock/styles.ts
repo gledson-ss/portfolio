@@ -49,7 +49,6 @@ export const InfoContainer = styled.div`
   @media (max-width: 767px) {
     width: 100%;
   }
-  border: 2px solid black;
 `
 export const TextContainer = styled.div`
   display: flex;

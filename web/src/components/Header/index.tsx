@@ -17,9 +17,21 @@ const Header: React.FC = () => {
 
   const router = useRouter()
 
-  function handleClickAbout(indexOption: number, path: string) {
-    handleUnderlineOptions(indexOption)
+  function handleRoute(path: string) {
     router.push(path)
+    setButtonMenuOptionsActived(false)
+  }
+
+  function handleClickAbout(
+    indexOption: number,
+    path: string,
+    isMobile: boolean
+  ) {
+    if (isMobile) {
+      setButtonMenuOptionsActived(!buttonMenuOptionsActived)
+    }
+    handleUnderlineOptions(indexOption)
+    handleRoute(path)
   }
 
   function handleUnderlineOptions(clikedOption: number) {
@@ -37,31 +49,31 @@ const Header: React.FC = () => {
   return (
     <>
       <St.Container>
-        <St.TitleContainer onClick={() => handleClickAbout(0, '/')}>
+        <St.TitleContainer onClick={() => handleClickAbout(0, '/', false)}>
           <St.Title>gledson.dev</St.Title>
         </St.TitleContainer>
         <St.OptionsContainer>
           <St.Option
             actived={currentOption[0]}
-            onClick={() => handleClickAbout(0, '/')}
+            onClick={() => handleClickAbout(0, '/', false)}
           >
             <St.DescriptionOption>Home</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[1]}
-            onClick={() => handleClickAbout(1, '/projects')}
+            onClick={() => handleClickAbout(1, '/projects', false)}
           >
             <St.DescriptionOption>Projetos</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[2]}
-            onClick={() => handleClickAbout(2, '/about')}
+            onClick={() => handleClickAbout(2, '/about', false)}
           >
             <St.DescriptionOption>Sobre</St.DescriptionOption>
           </St.Option>
           <St.Option
             actived={currentOption[3]}
-            onClick={() => handleClickAbout(3, '/contact')}
+            onClick={() => handleClickAbout(3, '/contact', false)}
           >
             <St.DescriptionOption>Contato</St.DescriptionOption>
           </St.Option>
@@ -83,7 +95,7 @@ const Header: React.FC = () => {
         <St.OptionsContainer>
           <St.Option
             actived={false}
-            onClick={() => setButtonMenuOptionsActived(false)}
+            onClick={() => handleRoute('projects')}
             id="mobile-header"
           >
             <St.DescriptionOption>Projetos</St.DescriptionOption>
@@ -93,25 +105,25 @@ const Header: React.FC = () => {
 
       <St.mobileMenuContainer hasMenuClicked={buttonMenuOptionsActived}>
         <St.Option
-          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          onClick={() => handleClickAbout(0, '/', true)}
           id="menu-options-mobile"
         >
           <St.DescriptionOption>Home</St.DescriptionOption>
         </St.Option>
         <St.Option
-          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          onClick={() => handleClickAbout(1, '/projects', true)}
           id="menu-options-mobile"
         >
           <St.DescriptionOption>Projetos</St.DescriptionOption>
         </St.Option>
         <St.Option
-          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          onClick={() => handleClickAbout(2, '/about', true)}
           id="menu-options-mobile"
         >
           <St.DescriptionOption>Sobre</St.DescriptionOption>
         </St.Option>
         <St.Option
-          onClick={() => setButtonMenuOptionsActived(!buttonMenuOptionsActived)}
+          onClick={() => handleClickAbout(3, '/contact', true)}
           id="menu-options-mobile"
         >
           <St.DescriptionOption>Contato</St.DescriptionOption>

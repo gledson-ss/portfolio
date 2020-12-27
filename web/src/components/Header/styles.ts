@@ -91,7 +91,7 @@ export const TitleContainer = styled.button`
   height: 100%;
   align-items: center;
   border: none;
-  @media (min-width: 768) {
+  @media (min-width: 768px) {
     width: 50%;
     justify-content: flex-start;
   }

@@ -4,7 +4,9 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 100px;
+  @media (min-width: 720px) {
+    padding: 0 100px;
+  }
 `
 export const TopImageContainer = styled.div`
   @media (max-width: 767px) {
@@ -26,10 +28,19 @@ export const ContactMessageContainer = styled.section`
   align-items: center;
   width: 100%;
   height: 13vh;
+
+  @media (max-width: 719px) {
+    height: 10vh;
+    justify-content: center;
+  }
+  border: 1px solid violet;
 `
 export const MessageImageContainer = styled.div`
   /* border: 1px solid violet; */
   padding-right: 22px;
+  @media (max-width: 719px) {
+    padding-right: 0;
+  }
 `
 
 export const MessageImage = styled(Image)`
@@ -44,10 +55,15 @@ export const MessageImage = styled(Image)`
     width: 70px;
     height: 52px;
   }
+  @media (max-width: 719px) {
+    width: 55px;
+    height: 45px;
+  }
 `
 
 export const MessageContainer = styled.div`
   padding-left: 22px;
+  /* border: 1px solid violet; */
 `
 
 export const Message = styled.p`
@@ -63,6 +79,9 @@ export const Message = styled.p`
   }
   @media (max-width: 1279px) {
     font-size: 24px;
+  }
+  @media (max-width: 720px) {
+    font-size: 5vw;
   }
 `
 
@@ -178,6 +197,10 @@ export const VectorFooterContainer = styled.div`
   margin-left: -100px;
   height: 14vh;
   position: relative;
+
+  @media (max-width: 676px) {
+    display: none;
+  }
 `
 export const VectorFooter = styled(Image)`
   width: 200px;
