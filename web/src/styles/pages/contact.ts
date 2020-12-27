@@ -33,7 +33,7 @@ export const ContactMessageContainer = styled.section`
     height: 10vh;
     justify-content: center;
   }
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 `
 export const MessageImageContainer = styled.div`
   /* border: 1px solid violet; */
@@ -88,7 +88,7 @@ export const ContactMenuContainer = styled.main`
   height: 63vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   @media (max-width: 719px) {
     display: flex;
     justify-content: center;
@@ -106,7 +106,7 @@ export const BlockContaint = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 `
 
 export const TitleContainer = styled.div`
