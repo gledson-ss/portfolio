@@ -80,8 +80,8 @@ export const Message = styled.p`
   @media (max-width: 1279px) {
     font-size: 24px;
   }
-  @media (max-width: 720px) {
-    font-size: 5vw;
+  @media (max-width: 719px) {
+    font-size: 5.2vw;
   }
 `
 
@@ -89,6 +89,11 @@ export const ContactMenuContainer = styled.main`
   height: 63vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+  @media (max-width: 719px) {
+    display: flex;
+    justify-content: center;
+  }
 `
 
 export const InfoContainer = styled.div`
@@ -102,11 +107,15 @@ export const BlockContaint = styled.div`
   flex-direction: column;
   height: 100%;
   width: 100%;
+  border: 1px solid green;
 `
 
 export const TitleContainer = styled.div`
   display: flex;
   padding: 10px 0;
+  @media (max-width: 719px) {
+    justify-content: center;
+  }
 `
 
 export const Title = styled.p`
@@ -121,11 +130,17 @@ export const Title = styled.p`
   @media (max-width: 1440px) {
     font-size: 20px;
   }
+  @media (max-width: 719px) {
+    font-size: 5.2vw;
+  }
 `
 
 export const DescriptionContainer = styled.div`
   display: flex;
   padding: 3vh 0;
+  @media (max-width: 719px) {
+    justify-content: center;
+  }
 `
 
 export const TextDescription = styled.p`
@@ -139,12 +154,19 @@ export const TextDescription = styled.p`
   @media (max-width: 1440px) {
     font-size: 14px;
   }
+  @media (max-width: 719px) {
+    font-size: 3.7vw;
+  }
 `
 
 export const IconContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50%;
+  @media (max-width: 719px) {
+    width: 100%;
+    justify-content: space-evenly;
+  }
 `
 
 export const SocialIcon = styled(Image)`

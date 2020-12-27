@@ -8,6 +8,9 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 719px) {
+    display: none;
+  }
 `
 
 export const SectionInput = styled.section`
