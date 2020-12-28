@@ -18,6 +18,7 @@ export const InitialContainer = styled.div`
       'BottomVector BottomVector';
     grid-template-columns: 1fr;
     padding: 0;
+    grid-template-rows: 60vh 30vh;
   }
 `
 
@@ -64,6 +65,9 @@ export const Vector = styled(Image)`
   @media (max-width: 767px) {
     width: 40vw;
   }
+  @media (max-width: 500px) {
+    width: 50vw;
+  }
 `
 
 export const PhotoContainer = styled.div`
@@ -100,4 +104,7 @@ export const BottomVectorInitialContainer = styled.div`
 export const BottomVector = styled(Image)`
   width: 100%;
   height: 19vh;
+  @media (max-width: 767px) {
+    height: 29vh;
+  }
 `
