@@ -16,6 +16,8 @@ export const InitialContainer = styled.div`
     grid-template-areas:
       'InformationBlock InformationBlock'
       'BottomVector BottomVector';
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 `
 
@@ -30,6 +32,11 @@ export const InformationBlock = styled.div`
 
 export const TextContainer = styled.div`
   padding: 0 100px;
+  @media (max-width: 767px) {
+    padding: 0 30px;
+    margin: 0;
+  }
+  /* border: 1px solid red; */
 `
 
 export const Text = styled.p`
@@ -39,6 +46,9 @@ export const Text = styled.p`
   }
   font-family: Open;
   font-size: 1.2vw;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `
 
 export const VectorContainer = styled.div`
@@ -48,6 +58,9 @@ export const VectorContainer = styled.div`
 
 export const Vector = styled(Image)`
   width: 20vw;
+  @media (max-width: 767px) {
+    width: 40vw;
+  }
 `
 
 export const PhotoContainer = styled.div`
@@ -55,7 +68,7 @@ export const PhotoContainer = styled.div`
   /* border: 1px solid blue; */
 `
 
-export const MoreSeeButtonContainer = styled.div`
+/* export const MoreSeeButtonContainer = styled.div`
   grid-area: ButtonContainer;
   display: flex;
   justify-content: center;
@@ -70,12 +83,15 @@ export const Button = styled.button`
   border: 1px solid orange;
   width: 15vw;
   height: 4.5vh;
-`
+` */
 
 export const BottomVectorInitialContainer = styled.div`
   grid-area: BottomVector;
-  /* border: 2px solid red; */
+
   margin: 0 -100px;
+  @media (max-width: 767px) {
+    margin: 0;
+  }
 `
 
 export const BottomVector = styled(Image)`
