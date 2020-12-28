@@ -47,6 +47,7 @@ export const Text = styled.p`
   }
   font-family: Open;
   font-size: 1.2vw;
+  color: ${({ theme }) => theme.colors.black};
   @media (max-width: 767px) {
     font-size: 16px;
   }

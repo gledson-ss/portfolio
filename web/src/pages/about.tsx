@@ -32,9 +32,6 @@ const About: React.FC = () => {
           </St.VectorContainer>
         </St.InformationBlock>
         <St.PhotoContainer />
-        {/* <St.MoreSeeButtonContainer>
-          <St.Button></St.Button>
-        </St.MoreSeeButtonContainer> */}
         <St.BottomVectorInitialContainer>
           <St.BottomVector src="/vectors/Vector4.png" unsized={true} />
         </St.BottomVectorInitialContainer>
