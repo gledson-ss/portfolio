@@ -12,6 +12,11 @@ export const InitialContainer = styled.div`
   grid-template-columns: 60% 40%;
   grid-template-rows: 70vh 20vh;
   padding: 0 100px;
+  @media (max-width: 767px) {
+    grid-template-areas:
+      'InformationBlock InformationBlock'
+      'BottomVector BottomVector';
+  }
 `
 
 export const InformationBlock = styled.div`
