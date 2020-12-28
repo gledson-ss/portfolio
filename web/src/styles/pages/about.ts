@@ -47,7 +47,10 @@ export const Text = styled.p`
   font-family: Open;
   font-size: 1.2vw;
   @media (max-width: 767px) {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 12px;
   }
 `
 
