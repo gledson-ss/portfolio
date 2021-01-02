@@ -1,6 +1,8 @@
 import React from 'react'
 
+import TechnologyCard from '../components/TechnologyCard'
 import * as St from '../styles/pages/about'
+import { TechList } from '../utils/colorsCardTech'
 
 const About: React.FC = () => {
   return (
@@ -36,6 +38,80 @@ const About: React.FC = () => {
           <St.BottomVector src="/vectors/Vector4.png" unsized={true} />
         </St.BottomVectorInitialContainer>
       </St.InitialContainer>
+      <St.SkillsMusicContainer>
+        <St.SkillsMusicVectorContainer>
+          <St.VectorRightSkillsMusicContainer
+            src={'/vectors/Vector5.png'}
+            unsized={true}
+          />
+        </St.SkillsMusicVectorContainer>
+        <St.SkillsContainer>
+          <St.Header>
+            <St.TitleHeaderContainer>
+              <St.Title>Skills</St.Title>
+            </St.TitleHeaderContainer>
+            <St.TitleDescriptionContainer>
+              <St.Description>
+                Tecnologias que estudo e utilizo em projetos
+              </St.Description>
+            </St.TitleDescriptionContainer>
+          </St.Header>
+          <St.TechnologiesContainer>
+            <St.TechnologiesBlock>
+              <TechnologyCard
+                tech="React"
+                placeUtilized="projetos web, desktop e mobile"
+              />
+              <TechnologyCard
+                tech="ReactNative"
+                placeUtilized="projetos mobile"
+              />
+              <TechnologyCard
+                tech="Typescript"
+                placeUtilized="Projetos com javascript"
+              />
+              <TechnologyCard
+                tech="Javascript"
+                placeUtilized="projetos web, desktop, servidor, mobile e etc"
+              />
+              <TechnologyCard tech="NextJs" placeUtilized="projetos web" />
+              <TechnologyCard
+                tech="NodeJs"
+                placeUtilized="projetos com javascript"
+              />
+              <TechnologyCard
+                tech="ElectronJs"
+                placeUtilized="Projetos para app Desktop"
+              />
+              <TechnologyCard
+                tech="VsCode"
+                placeUtilized="Meu editor de Codigo principal"
+              />
+              <TechnologyCard tech="Java" placeUtilized="Projetos em Deskop" />
+              <TechnologyCard
+                tech="Python"
+                placeUtilized="Analise de dados e estatisticas"
+              />
+              <TechnologyCard
+                tech="Cplusplus"
+                placeUtilized="Projetos em automação, sistema embarcados"
+              />
+              <TechnologyCard
+                tech="C"
+                placeUtilized="Projetos em automação, sistema embarcados"
+              />
+              <TechnologyCard
+                tech="Mysql"
+                placeUtilized="Voltado para Banco de dados"
+              />
+              <TechnologyCard
+                tech="Sqlite"
+                placeUtilized="Voltado para Banco de dados"
+              />
+            </St.TechnologiesBlock>
+          </St.TechnologiesContainer>
+        </St.SkillsContainer>
+      </St.SkillsMusicContainer>
     </St.Container>
   )
 }

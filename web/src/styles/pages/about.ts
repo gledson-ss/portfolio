@@ -37,7 +37,6 @@ export const TextContainer = styled.div`
     padding: 0 30px;
     margin: 0;
   }
-  /* border: 1px solid red; */
 `
 
 export const Text = styled.p`
@@ -108,4 +107,91 @@ export const BottomVector = styled(Image)`
   @media (max-width: 767px) {
     height: 29vh;
   }
+`
+
+export const SkillsMusicContainer = styled.div`
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+  padding: 0 100px;
+`
+
+export const SkillsMusicVectorContainer = styled.div`
+  height: 100vh;
+  right: 0;
+  top: 25vh;
+  position: absolute;
+`
+
+export const VectorRightSkillsMusicContainer = styled(Image)`
+  width: 25vh;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const SkillsContainer = styled.div`
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
+export const Header = styled.div`
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+`
+
+export const TitleHeaderContainer = styled.div`
+  display: flex;
+`
+
+export const Title = styled.p`
+  font-size: 36px;
+  @font-face {
+    font-family: proza;
+    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+  }
+  font-family: proza;
+  color: ${({ theme }) => theme.colors.black};
+  @media (max-width: 1440px) {
+    font-size: 28px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 24px;
+  }
+  @media (max-width: 719px) {
+    font-size: 5.4vw;
+  }
+`
+
+export const TitleDescriptionContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+export const Description = styled.p`
+  font-size: 14px;
+  @font-face {
+    font-family: open;
+    src: url('/fonts/Open-sans/OpenSans-Regular.ttf');
+  }
+  font-family: open;
+  color: ${({ theme }) => theme.colors.orange};
+`
+
+export const TechnologiesContainer = styled.div`
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const TechnologiesBlock = styled.div`
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(5, 1fr);
 `
