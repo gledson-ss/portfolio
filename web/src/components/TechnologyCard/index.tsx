@@ -13,8 +13,8 @@ const TechnologyCard: React.FC<cardProps> = ({ tech, placeUtilized }) => {
       <Icon
         style={{
           color: color,
-          width: '3vw',
-          height: '3vh',
+          width: '2.5vw',
+          height: '2.5vh',
           marginTop: '-5px'
         }}
       />

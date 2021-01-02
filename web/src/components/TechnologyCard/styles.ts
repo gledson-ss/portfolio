@@ -5,8 +5,8 @@ interface propsContainer {
 }
 
 export const Container = styled.div<propsContainer>`
-  width: 10vw;
-  height: 8vh;
+  width: 11vw;
+  height: 9vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@ export const TitleContainer = styled.div`
 `
 
 export const Title = styled.p`
-  font-size: 18px;
+  font-size: 1vw;
   @font-face {
     font-family: proza;
     src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
@@ -40,7 +40,7 @@ export const DescriptionContainer = styled.div`
 `
 
 export const Description = styled.p`
-  font-size: 12px;
+  font-size: 0.8vw;
   @font-face {
     font-family: open;
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
