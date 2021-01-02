@@ -132,7 +132,7 @@ export const VectorRightSkillsMusicContainer = styled(Image)`
 `
 
 export const SkillsContainer = styled.div`
-  height: 45vh;
+  height: 43vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
