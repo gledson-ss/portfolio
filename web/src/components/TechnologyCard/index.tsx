@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoLogoJavascript } from 'react-icons/io'
 import { IconType } from 'react-icons/lib'
 
 import { TechList } from '../../utils/colorsCardTech'

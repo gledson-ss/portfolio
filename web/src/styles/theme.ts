@@ -25,4 +25,6 @@ const theme: colorTheme = {
 }
 export type ThemeType = typeof theme
 
+export { theme }
+
 export default ThemeType

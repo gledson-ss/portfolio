@@ -2,7 +2,6 @@ import React from 'react'
 
 import TechnologyCard from '../components/TechnologyCard'
 import * as St from '../styles/pages/about'
-import { TechList } from '../utils/colorsCardTech'
 
 const About: React.FC = () => {
   return (

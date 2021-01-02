@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Header from '../components/Header'
 import GlobalStyle from '../styles/globals'
-import theme from '../styles/theme'
+import { theme } from '../styles/theme'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
