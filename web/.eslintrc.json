@@ -28,6 +28,7 @@
         "import-helpers"
     ],
     "rules": {
+        "quotes": ["error", "single"],
         "prettier/prettier": "error",
         "space-before-function-paren": "off",
         "react/prop-types": "off",
