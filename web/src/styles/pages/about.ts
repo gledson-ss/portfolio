@@ -139,7 +139,7 @@ export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid blue;
+
   @media (max-width: 767px) {
     align-items: flex-start;
   }
@@ -181,6 +181,7 @@ export const Title = styled.p`
 export const TitleDescriptionContainer = styled.div`
   display: flex;
   align-items: center;
+
   @media (max-width: 767px) {
     justify-content: center;
   }
@@ -201,7 +202,6 @@ export const TechnologiesContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 
   @media (max-width: 767px) {
     overflow: scroll;

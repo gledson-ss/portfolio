@@ -59,7 +59,7 @@ export const DescriptionContainer = styled.div`
   height: 4.5vh;
   display: flex;
   align-items: center;
-  border: 1px solid green;
+
   @media (max-width: 767px) {
     height: 10vh;
   }
@@ -83,7 +83,7 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   margin-right: 8px;
-  border: 1px solid red;
+
   @media (max-width: 767px) {
     width: 40%;
   }
