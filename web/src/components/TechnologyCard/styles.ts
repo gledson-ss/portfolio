@@ -10,7 +10,7 @@ export const Container = styled.div<propsContainer>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0.8vw;
+  padding-left: 0.8vw;
 
   border-radius: 10px;
   border: 1px solid ${({ Color }) => Color};
@@ -30,6 +30,7 @@ export const HeaderContainer = styled.div`
   height: 4vh;
   display: flex;
   align-items: center;
+
   @media (max-width: 767px) {
     height: 10vh;
   }
