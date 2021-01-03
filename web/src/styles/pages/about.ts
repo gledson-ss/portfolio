@@ -135,7 +135,7 @@ export const VectorRightSkillsMusicContainer = styled(Image)`
 `
 
 export const SkillsContainer = styled.div`
-  height: 43vh;
+  height: 44vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,7 +147,6 @@ export const SkillsContainer = styled.div`
 
 export const Header = styled.div`
   width: 100%;
-  height: 10vh;
   display: flex;
   flex-direction: column;
 `
@@ -198,7 +197,7 @@ export const Description = styled.p`
 
 export const TechnologiesContainer = styled.div`
   width: 100%;
-  height: 30vh;
+  height: 32vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +209,7 @@ export const TechnologiesContainer = styled.div`
 export const TechnologiesBlock = styled.div`
   display: grid;
   width: 100%;
-  height: 100%;
+  height: 32vh;
   grid-template-columns: repeat(5, 1fr);
 
   @media (max-width: 767px) {
