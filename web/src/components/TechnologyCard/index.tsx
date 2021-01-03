@@ -11,10 +11,11 @@ interface cardProps {
 const TechnologyCard: React.FC<cardProps> = ({ tech, placeUtilized }) => {
   function handleIcon(Icon: IconType, Color: string) {
     const CurrentIcon = styled(Icon)`
-      width: 3.5vw;
+      width: 1.7vw;
       height: 3.5vh;
       margin-top: -5px;
       color: ${() => Color};
+
       @media (max-width: 767px) {
         width: 100%;
         height: 8vh;
