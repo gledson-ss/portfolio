@@ -111,9 +111,12 @@ export const BottomVector = styled(Image)`
 
 export const SkillsMusicContainer = styled.div`
   height: 100vh;
-  border: 1px solid black;
   position: relative;
   padding: 0 100px;
+  border: 1px solid black;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 `
 
 export const SkillsMusicVectorContainer = styled.div`
@@ -136,6 +139,10 @@ export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid blue;
+  @media (max-width: 767px) {
+    align-items: flex-start;
+  }
 `
 
 export const Header = styled.div`
@@ -147,6 +154,9 @@ export const Header = styled.div`
 
 export const TitleHeaderContainer = styled.div`
   display: flex;
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
 `
 
 export const Title = styled.p`
@@ -171,6 +181,9 @@ export const Title = styled.p`
 export const TitleDescriptionContainer = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
 `
 export const Description = styled.p`
   font-size: 14px;
@@ -188,10 +201,19 @@ export const TechnologiesContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
+
+  @media (max-width: 767px) {
+    overflow: scroll;
+  }
 `
 export const TechnologiesBlock = styled.div`
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-columns: repeat(5, 1fr);
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `

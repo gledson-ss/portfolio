@@ -14,13 +14,31 @@ export const Container = styled.div<propsContainer>`
 
   border-radius: 10px;
   border: 1px solid ${({ Color }) => Color};
+  @media (max-width: 1440px) {
+    width: 13vw;
+    height: 10.5vh;
+  }
+
+  @media (max-width: 767px) {
+    width: 30vw;
+    height: 20vh;
+  }
 `
 
-export const TitleContainer = styled.div`
+export const HeaderContainer = styled.div`
   width: 100%;
   height: 4vh;
   display: flex;
   align-items: center;
+  @media (max-width: 767px) {
+    height: 10vh;
+  }
+`
+export const TitleContainer = styled.div`
+  width: 70%;
+  @media (max-width: 767px) {
+    width: 60%;
+  }
 `
 
 export const Title = styled.p`
@@ -31,12 +49,20 @@ export const Title = styled.p`
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};
+
+  @media (max-width: 767px) {
+    font-size: 3vw;
+  }
 `
 export const DescriptionContainer = styled.div`
   width: 100%;
-  height: 4vh;
+  height: 4.5vh;
   display: flex;
   align-items: center;
+  border: 1px solid green;
+  @media (max-width: 767px) {
+    height: 10vh;
+  }
 `
 
 export const Description = styled.p`
@@ -47,11 +73,18 @@ export const Description = styled.p`
   }
   font-family: open;
   color: ${({ theme }) => theme.colors.gray};
+  @media (max-width: 767px) {
+    font-size: 2vw;
+  }
 `
 export const IconContainer = styled.div`
-  width: 1.5vw;
-  height: 4.5vh;
+  width: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
   margin-right: 8px;
+  border: 1px solid red;
+  @media (max-width: 767px) {
+    width: 40%;
+  }
 `

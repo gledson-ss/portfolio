@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconType } from 'react-icons/lib'
+import styled from 'styled-components'
 
 import { TechList } from '../../utils/colorsCardTech'
 import * as St from './styles'
@@ -8,27 +9,29 @@ interface cardProps {
   placeUtilized?: string
 }
 const TechnologyCard: React.FC<cardProps> = ({ tech, placeUtilized }) => {
-  function handleIcon(Icon: IconType, color: string) {
-    return (
-      <Icon
-        style={{
-          color: color,
-          width: '2.5vw',
-          height: '2.5vh',
-          marginTop: '-5px'
-        }}
-      />
-    )
+  function handleIcon(Icon: IconType, Color: string) {
+    const CurrentIcon = styled(Icon)`
+      width: 3.5vw;
+      height: 3.5vh;
+      margin-top: -5px;
+      color: ${() => Color};
+      @media (max-width: 767px) {
+        width: 100%;
+        height: 8vh;
+      }
+    `
+    return <CurrentIcon />
   }
   return (
     <St.Container Color={TechList[tech].color}>
-      <St.TitleContainer>
+      <St.HeaderContainer>
         <St.IconContainer>
           {handleIcon(TechList[tech].icon, TechList[tech].color)}
         </St.IconContainer>
-
-        <St.Title>{TechList[tech].name}</St.Title>
-      </St.TitleContainer>
+        <St.TitleContainer>
+          <St.Title>{TechList[tech].name}</St.Title>
+        </St.TitleContainer>
+      </St.HeaderContainer>
       <St.DescriptionContainer>
         <St.Description>{placeUtilized}</St.Description>
       </St.DescriptionContainer>
