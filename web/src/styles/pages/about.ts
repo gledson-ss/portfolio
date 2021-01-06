@@ -110,13 +110,12 @@ export const BottomVector = styled(Image)`
 `
 
 export const SkillsMusicContainer = styled.div`
-  height: 146vh;
+  height: 149vh;
   position: relative;
   padding: 0 100px;
   border: 1px solid black;
   @media (max-width: 767px) {
     padding: 0;
-    height: 149vh;
   }
 `
 
