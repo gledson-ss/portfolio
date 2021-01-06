@@ -1,5 +1,6 @@
 import React from 'react'
 
+import CarouselVideo from '../components/CarouselVideo'
 import TechnologyCard from '../components/TechnologyCard'
 import * as St from '../styles/pages/about'
 
@@ -59,57 +60,97 @@ const About: React.FC = () => {
             <St.TechnologiesBlock>
               <TechnologyCard
                 tech="React"
-                placeUtilized="projetos web, desktop e mobile"
+                placeUtilized="Projetos Web, Desktop e Mobile"
               />
               <TechnologyCard
                 tech="ReactNative"
-                placeUtilized="projetos mobile"
+                placeUtilized="Projetos Mobile"
               />
               <TechnologyCard
                 tech="Typescript"
-                placeUtilized="Projetos com javascript"
+                placeUtilized="Projetos com Javascript"
               />
               <TechnologyCard
                 tech="Javascript"
-                placeUtilized="projetos web, desktop, servidor, mobile e etc"
+                placeUtilized="Projetos Web, Desktop, servidor, Mobile e etc"
               />
-              <TechnologyCard tech="NextJs" placeUtilized="projetos web" />
+              <TechnologyCard tech="NextJs" placeUtilized="projetos Web" />
               <TechnologyCard
                 tech="NodeJs"
-                placeUtilized="projetos com javascript"
+                placeUtilized="Projetos com Javascript"
               />
               <TechnologyCard
                 tech="ElectronJs"
-                placeUtilized="Projetos para app Desktop"
+                placeUtilized="Projetos para App Desktop"
               />
               <TechnologyCard
                 tech="VsCode"
-                placeUtilized="Meu editor de Codigo principal"
+                placeUtilized="Meu Editor de Código Principal"
               />
               <TechnologyCard tech="Java" placeUtilized="Projetos em Deskop" />
               <TechnologyCard
                 tech="Python"
-                placeUtilized="Analise de dados e estatisticas"
+                placeUtilized="Análise de Dados e Estatística"
               />
               <TechnologyCard
                 tech="Cplusplus"
-                placeUtilized="Projetos em automação, sistema embarcados"
+                placeUtilized="Projetos em Automação, Sistema Embarcados"
               />
               <TechnologyCard
                 tech="C"
-                placeUtilized="Projetos em automação, sistema embarcados"
+                placeUtilized="Projetos em Automação, Sistema Embarcados"
               />
               <TechnologyCard
                 tech="Mysql"
-                placeUtilized="Voltado para Banco de dados"
+                placeUtilized="Voltado para Banco de Dados"
               />
               <TechnologyCard
                 tech="Sqlite"
-                placeUtilized="Voltado para Banco de dados"
+                placeUtilized="Voltado para Banco de Dados"
               />
             </St.TechnologiesBlock>
           </St.TechnologiesContainer>
         </St.SkillsContainer>
+        <St.MusicContainer>
+          <St.Header>
+            <St.TitleHeaderContainer>
+              <St.Title>Gostos pessoais</St.Title>
+            </St.TitleHeaderContainer>
+            <St.TitleDescriptionContainer>
+              <St.Description>
+                Vamo deixar de lado um pouco a parte técnica
+              </St.Description>
+            </St.TitleDescriptionContainer>
+          </St.Header>
+          <St.GuitarContainer>
+            <St.BlockGuitar>
+              <St.GuitarVectorContainer>
+                <St.GuitarVector
+                  src={'/vectors/guitarVector.png'}
+                  unsized={true}
+                />
+              </St.GuitarVectorContainer>
+              <St.GuitarDescriptionContainer>
+                <St.TitleDescriptionContainer>
+                  <St.TitleBlock>Musica</St.TitleBlock>
+                </St.TitleDescriptionContainer>
+                <St.DescriptionBlockContainer>
+                  <St.DescriptionBlock>
+                    Et cursus sed senectus tellus placerat risus faucibus
+                    faucibus. Quam ut iaculis integer a, diam pellentesque
+                    mauris aliquet. At id non nascetur tempor rhoncus, felis,
+                    tristique ut. Risus aliquam libero urna, lacus, ridiculus id
+                    auctor. felis, tristique ut. Risus aliquam libero urna,
+                    lacus, ridiculus id auctor.
+                  </St.DescriptionBlock>
+                </St.DescriptionBlockContainer>
+              </St.GuitarDescriptionContainer>
+            </St.BlockGuitar>
+            <St.MusicVideoSectionContainer>
+              <CarouselVideo />
+            </St.MusicVideoSectionContainer>
+          </St.GuitarContainer>
+        </St.MusicContainer>
       </St.SkillsMusicContainer>
     </St.Container>
   )

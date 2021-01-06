@@ -79,11 +79,10 @@ export const Description = styled.p`
   }
 `
 export const IconContainer = styled.div`
-  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
-
+  padding-right: 8px;
   @media (max-width: 767px) {
     width: 40%;
   }
