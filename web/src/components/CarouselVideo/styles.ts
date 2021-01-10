@@ -96,6 +96,7 @@ export const Video = styled.iframe`
   width: 26vw;
   height: 30vh;
   border: 10px solid ${({ theme }) => theme.colors.blue};
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   @media (max-width: 767px) {
     width: 100%;
   }

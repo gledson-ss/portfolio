@@ -18,6 +18,7 @@ export const InitialContainer = styled.div`
       'BottomVector BottomVector';
     grid-template-columns: 1fr;
     padding: 0;
+
     grid-template-rows: 60vh 30vh;
   }
 `
@@ -113,7 +114,7 @@ export const SkillsMusicContainer = styled.div`
   height: 149vh;
   position: relative;
   padding: 0 100px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   @media (max-width: 767px) {
     padding: 0;
   }
@@ -301,3 +302,41 @@ export const MusicVideoSectionContainer = styled.div`
   height: 100%;
   margin-top: 20px;
 `
+
+export const SectionMusicContainer = styled.div`
+  height: 77vh;
+  position: relative;
+  border: 1px solid violet;
+`
+
+export const LateralImageLeft = styled(Image)`
+  width: 260px;
+  height: 630px;
+  position: absolute;
+  top: 42vh;
+  /*  @media (max-width: 767px){
+    width: 20px;
+    height: 20px;
+  } */
+`
+
+export const TopMusicContainer = styled.div`
+  width: 100%;
+  padding: 0 100px;
+  position: absolute;
+  top: 0;
+  border: 1px solid green;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  @media (max-width: 1440px) {
+    padding: 0 60px;
+  }
+`
+export const TopMusicDescriptionContainer = styled.div`
+  margin-top: 3vh;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`
+export const GamerContainer = styled.div``

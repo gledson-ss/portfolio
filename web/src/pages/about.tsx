@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CarouselVideo from '../components/CarouselVideo'
+import MusicPlaylist from '../components/MusicPlaylist'
 import TechnologyCard from '../components/TechnologyCard'
 import * as St from '../styles/pages/about'
 
@@ -152,6 +153,25 @@ const About: React.FC = () => {
           </St.GuitarContainer>
         </St.MusicContainer>
       </St.SkillsMusicContainer>
+      <St.SectionMusicContainer>
+        <St.LateralImageLeft src="/vectors/Vector6.png" unsized={true} />
+        <St.TopMusicContainer>
+          <St.TopMusicDescriptionContainer>
+            <St.TitleDescriptionContainer>
+              <St.TitleBlock>Top 3 músicas</St.TitleBlock>
+            </St.TitleDescriptionContainer>
+            <St.DescriptionBlockContainer>
+              <St.DescriptionBlock>
+                Risus aliquam libero urna, lacus, ridiculus id auctor. felis,
+                tristique ut. Risus aliquam libero urna, lacus, ridiculus id
+                auctor.
+              </St.DescriptionBlock>
+            </St.DescriptionBlockContainer>
+          </St.TopMusicDescriptionContainer>
+          <MusicPlaylist />
+        </St.TopMusicContainer>
+      </St.SectionMusicContainer>
+      <St.GamerContainer></St.GamerContainer>
     </St.Container>
   )
 }
