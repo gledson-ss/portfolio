@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CarouselVideo from '../components/CarouselVideo'
+import GamerSection from '../components/GamerSection'
 import MusicPlaylist from '../components/MusicPlaylist'
 import TechnologyCard from '../components/TechnologyCard'
 import * as St from '../styles/pages/about'
@@ -171,7 +172,7 @@ const About: React.FC = () => {
           <MusicPlaylist />
         </St.TopMusicContainer>
       </St.SectionMusicContainer>
-      <St.GamerContainer></St.GamerContainer>
+      <GamerSection />
     </St.Container>
   )
 }

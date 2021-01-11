@@ -307,6 +307,7 @@ export const SectionMusicContainer = styled.div`
   height: 77vh;
   position: relative;
   border: 1px solid violet;
+  margin-bottom: 20px;
 `
 
 export const LateralImageLeft = styled(Image)`
@@ -339,4 +340,3 @@ export const TopMusicDescriptionContainer = styled.div`
     width: 100%;
   }
 `
-export const GamerContainer = styled.div``
