@@ -1,26 +1,23 @@
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 import styled from 'styled-components'
 
+interface arrowContainerProps {
+  side: string
+}
+
 export const Container = styled.div`
-  height: 100%;
-  width: 35vw;
   display: flex;
-  flex-direction: column;
-  border: 4px solid green;
+  /* border: 4px solid blue; */
   @media (max-width: 767px) {
     width: 100%;
   }
 `
 
 export const CarouselContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
+  /* border: 4px solid blue; */
 `
 
 export const CarouselVideoContainer = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,8 +46,11 @@ export const Title = styled.p`
     font-size: 22px;
   }
 `
-export const ArrowContainer = styled.div`
-  /* border: 4px solid violet; */
+export const ArrowContainer = styled.div<arrowContainerProps>`
+  width: 3.5vw;
+  display: flex;
+  justify-content: ${({ side }) =>
+    side === 'right' ? 'flex-end' : 'flex-start'};
 `
 
 export const ArrowButton = styled.button`
