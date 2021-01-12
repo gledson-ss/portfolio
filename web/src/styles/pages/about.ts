@@ -299,15 +299,16 @@ export const DescriptionBlock = styled.p`
   color: ${({ theme }) => theme.colors.black};
 `
 export const MusicVideoSectionContainer = styled.div`
-  height: 100%;
   margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
 `
 
 export const SectionMusicContainer = styled.div`
   height: 77vh;
   position: relative;
-  border: 1px solid violet;
-  margin-bottom: 20px;
+  /* border: 1px solid violet; */
+  margin-bottom: 40px;
 `
 
 export const LateralImageLeft = styled(Image)`
@@ -326,7 +327,7 @@ export const TopMusicContainer = styled.div`
   padding: 0 100px;
   position: absolute;
   top: 0;
-  border: 1px solid green;
+
   @media (max-width: 767px) {
     padding: 0;
   }

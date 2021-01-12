@@ -149,7 +149,7 @@ const About: React.FC = () => {
               </St.GuitarDescriptionContainer>
             </St.BlockGuitar>
             <St.MusicVideoSectionContainer>
-              <CarouselVideo />
+              <CarouselVideo hasTitle={true} />
             </St.MusicVideoSectionContainer>
           </St.GuitarContainer>
         </St.MusicContainer>
