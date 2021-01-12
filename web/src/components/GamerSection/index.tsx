@@ -20,7 +20,7 @@ const GamerSection: React.FC = () => {
         <St.ControlImage unsized={true} src="/vectors/Vector7.png" />
       </St.ImageContainer>
       <St.CorouselContainer>
-        <CarouselVideo />
+        <CarouselVideo hasTitle={false} />
       </St.CorouselContainer>
     </St.Container>
   )

@@ -63,16 +63,18 @@ export const ImageContainer = styled.div`
   grid-area: controlImage;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 `
 
 export const ControlImage = styled(Image)`
-  width: 350px;
-  height: 350px;
+  width: 23vw;
+  height: 46vh;
 `
 
 export const CorouselContainer = styled.div`
   grid-area: gamesImage;
   display: flex;
   justify-content: center;
-  border: 1px solid blueviolet;
+  margin-top: 100px;
+  /* border: 1px solid blueviolet; */
 `
