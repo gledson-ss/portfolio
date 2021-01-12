@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 58vh;
+  /* height: 58vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 2px solid black; */
   @media (max-width: 767px) {
     flex-direction: column;
   }
-  /* border: 2px solid black; */
 `
 
 export const NameMusicContainer = styled.div`
@@ -33,6 +33,11 @@ export const MusicList = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 30vh;
+
+  @media (max-width: 767px) {
+    overflow-y: scroll;
+    height: 100px;
+  }
 `
 
 export const Music = styled.iframe`

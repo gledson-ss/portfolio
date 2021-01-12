@@ -316,6 +316,9 @@ export const LateralImageLeft = styled(Image)`
   height: 630px;
   position: absolute;
   top: 42vh;
+  @media (max-width: 767px) {
+    display: none;
+  }
   /*  @media (max-width: 767px){
     width: 20px;
     height: 20px;

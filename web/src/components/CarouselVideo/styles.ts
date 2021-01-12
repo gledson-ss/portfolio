@@ -8,9 +8,6 @@ interface arrowContainerProps {
 export const Container = styled.div`
   display: flex;
   /* border: 4px solid blue; */
-  @media (max-width: 767px) {
-    width: 100%;
-  }
 `
 
 export const CarouselContainer = styled.div`
@@ -21,6 +18,7 @@ export const CarouselVideoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   /* border: 4px solid red; */
 `
 
@@ -51,6 +49,10 @@ export const ArrowContainer = styled.div<arrowContainerProps>`
   display: flex;
   justify-content: ${({ side }) =>
     side === 'right' ? 'flex-end' : 'flex-start'};
+
+  @media (max-width: 767px) {
+    width: 10vw;
+  }
 `
 
 export const ArrowButton = styled.button`

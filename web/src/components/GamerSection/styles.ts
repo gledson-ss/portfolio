@@ -5,23 +5,36 @@ export const Container = styled.div`
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'a1 a2' 'controlImage gamesImage';
+
+  grid-template-areas: 'a1 a1' 'controlImage gamesImage';
   border: 3px solid black;
+
   @media (min-width: 768px) {
     padding: 0 100px;
+  }
+  @media (max-width: 767px) {
+    grid-template-areas: 'a1 a1' 'gamesImage gamesImage';
   }
 `
 
 export const DescriptionBlock = styled.div`
-  grid-area: a2;
+  grid-area: a1;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  /* border: 1px solid blue; */
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+  }
 `
 
 export const TitleContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 767px) {
+    width: 100%;
+    justify-content: center;
+  }
 `
 
 export const TitleBlock = styled.p`
@@ -48,6 +61,10 @@ export const DescriptionContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: 18px;
+  /* border: 1px solid red; */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `
 
 export const Description = styled.p`
@@ -67,8 +84,15 @@ export const ImageContainer = styled.div`
 `
 
 export const ControlImage = styled(Image)`
-  width: 23vw;
-  height: 46vh;
+  width: 350px;
+  height: 350px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (max-width: 1280px) {
+    width: 280px;
+    height: 280px;
+  }
 `
 
 export const CorouselContainer = styled.div`
