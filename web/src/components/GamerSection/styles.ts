@@ -7,7 +7,6 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
 
   grid-template-areas: 'a1 a1' 'controlImage gamesImage';
-  border: 3px solid black;
 
   @media (min-width: 768px) {
     padding: 0 100px;
@@ -70,7 +69,7 @@ export const DescriptionContainer = styled.div`
 export const Description = styled.p`
   @font-face {
     font-family: open;
-    src: url('/fonts/Open-sans/OpenSans-Regular.ttf');
+    src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
   color: ${({ theme }) => theme.colors.black};
