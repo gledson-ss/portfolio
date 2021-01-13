@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CarouselVideo from '../components/CarouselVideo'
+import Footer from '../components/Footer'
 import GamerSection from '../components/GamerSection'
 import MusicPlaylist from '../components/MusicPlaylist'
 import TechnologyCard from '../components/TechnologyCard'
@@ -173,6 +174,7 @@ const About: React.FC = () => {
         </St.TopMusicContainer>
       </St.SectionMusicContainer>
       <GamerSection />
+      <Footer />
     </St.Container>
   )
 }

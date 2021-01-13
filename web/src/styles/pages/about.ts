@@ -293,7 +293,7 @@ export const DescriptionBlockContainer = styled.div`
 export const DescriptionBlock = styled.p`
   @font-face {
     font-family: open;
-    src: url('/fonts/Open-sans/OpenSans-Regular.ttf');
+    src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
   color: ${({ theme }) => theme.colors.black};
