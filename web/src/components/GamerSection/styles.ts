@@ -2,17 +2,18 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 80vh;
+  height: 65vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'a1 a1' 'controlImage carousel';
 
-  grid-template-areas: 'a1 a1' 'controlImage gamesImage';
-
+  @media (max-width: 1130px) {
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 'a1 a1' 'carousel carousel';
+  }
   @media (min-width: 768px) {
     padding: 0 100px;
-  }
-  @media (max-width: 767px) {
-    grid-template-areas: 'a1 a1' 'gamesImage gamesImage';
   }
 `
 
@@ -21,7 +22,7 @@ export const DescriptionBlock = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  /* border: 1px solid blue; */
+
   @media (max-width: 767px) {
     justify-content: flex-start;
   }
@@ -79,25 +80,32 @@ export const ImageContainer = styled.div`
   grid-area: controlImage;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+
+  /* border: 1px solid red; */
+  @media (max-width: 1280px) {
+    justify-content: center;
+  }
+  @media (max-width: 1130px) {
+    display: none;
+  }
 `
 
 export const ControlImage = styled(Image)`
-  width: 350px;
-  height: 350px;
+  width: 380px;
+  height: 380px;
   @media (max-width: 767px) {
     display: none;
   }
   @media (max-width: 1280px) {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
   }
 `
 
 export const CorouselContainer = styled.div`
-  grid-area: gamesImage;
+  grid-area: carousel;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  align-items: center;
   /* border: 1px solid blueviolet; */
 `

@@ -11,6 +11,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: flex-end;
+  margin-top: -100px;
   @media (max-width: 767px) {
     display: none;
   }

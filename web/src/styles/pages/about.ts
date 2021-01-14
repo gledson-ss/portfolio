@@ -330,7 +330,7 @@ export const TopMusicContainer = styled.div`
   padding: 0 100px;
   position: absolute;
   top: 0;
-
+  /* border: 1px solid red; */
   @media (max-width: 767px) {
     padding: 0;
   }
