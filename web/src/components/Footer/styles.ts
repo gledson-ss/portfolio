@@ -66,6 +66,7 @@ export const Link = styled.a``
 export const GithubIcon = styled(AiFillGithub)`
   width: 5vw;
   height: 5vh;
+
   color: ${({ theme }) => theme.colors.darkGray};
 
   @media (max-width: 1280px) {

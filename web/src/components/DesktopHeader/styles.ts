@@ -1,12 +1,7 @@
-import { IoMenu } from 'react-icons/io5'
 import styled, { css } from 'styled-components'
 
 interface propsOption {
   actived?: boolean
-}
-
-interface propsOptionMenuMobile {
-  hasMenuClicked?: boolean
 }
 
 const fontProza = css`
@@ -27,63 +22,6 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
   }
-`
-
-export const mobileHeader = styled.div`
-  display: none;
-  @media (max-width: 767px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 80px;
-  }
-`
-
-const buttonMenuEffect = css`
-  #icon {
-    color: ${({ theme }) => theme.colors.white};
-    background-color: ${({ theme }) => theme.colors.orange};
-    border-radius: 20px;
-  }
-`
-
-export const OptionMenuButton = styled.button<propsOption>`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 2px;
-  border: none;
-  :focus {
-    outline: none;
-  }
-  #project-header {
-  }
-
-  ${({ actived }) => {
-    if (actived) {
-      return buttonMenuEffect
-    }
-  }}
-  background-color: transparent;
-`
-export const iconOptionButton = styled(IoMenu)`
-  color: #fc7c1c;
-`
-export const mobileMenuContainer = styled.div<propsOptionMenuMobile>`
-  @media (min-width: 768px) {
-    display: none;
-  }
-
-  ${({ hasMenuClicked }) => {
-    if (hasMenuClicked) {
-      return 'display: grid;'
-    } else {
-      return 'display: none;'
-    }
-  }}
-
-  height: 150px;
-  /* border: 1px solid green; */
-  grid-template-rows: 1fr 1fr 1fr 1fr;
 `
 
 export const TitleContainer = styled.button`
@@ -130,39 +68,15 @@ const underlineOption = css`
   border-bottom: 2px solid ${({ theme }) => theme.colors.orange};
   cursor: pointer;
 `
-
-const styleMenuHeaderOption = css`
-  justify-content: flex-start;
-  margin: 0 35px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.orange};
-`
-const styleMobileHeader = css`
-  justify-content: flex-end;
-`
-
 export const Option = styled.button<propsOption>`
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: transparent;
-  @media (max-width: 767px) {
-    height: 27px;
-    background-color: ${({ theme }) => theme.colors.white};
-
-    ${({ id }) => {
-      if (id === 'mobile-header') {
-        return styleMobileHeader
-      } else {
-        return styleMenuHeaderOption
-      }
-    }}
-  }
 
   :focus {
     outline: none;
-  }
-  :hover {
     @media (min-width: 768px) {
       ${underlineOption}
     }
