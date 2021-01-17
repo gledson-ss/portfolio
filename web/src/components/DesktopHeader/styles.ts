@@ -82,11 +82,11 @@ export const Option = styled.button<propsOption>`
     }
   }
 
-  ${({ actived }) => {
+  /* ${({ actived }) => {
     if (actived) {
       return underlineOption
     }
-  }}
+  }} */
 `
 
 export const DescriptionOption = styled.p`
