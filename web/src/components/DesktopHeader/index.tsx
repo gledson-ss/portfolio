@@ -3,49 +3,53 @@ import React, { useEffect, useState } from 'react'
 
 import * as St from './styles'
 
-const HeaderDesktop: React.FC = () => {
+const DesktopHeader: React.FC = () => {
+  const router = useRouter()
+  const [hasChangePage, setHasChangePage] = useState<boolean>(false)
   const [currentOption, setCurrentOption] = useState<boolean[]>([
-    true,
+    false,
     false,
     false,
     false
   ])
 
-  const [buttonMenuOptionsActived, setButtonMenuOptionsActived] = useState<
-    boolean
-  >(false)
-
-  const router = useRouter()
-
   function handleRoute(path: string) {
     router.push(path)
-    setButtonMenuOptionsActived(false)
   }
 
-  function handleClickAbout(path: string, isMobile: boolean) {
-    if (isMobile) {
-      setButtonMenuOptionsActived(!buttonMenuOptionsActived)
-    }
-
+  function handleClickAbout(path: string) {
+    setHasChangePage(!hasChangePage)
     handleRoute(path)
   }
 
   return (
     <St.Container>
-      <St.TitleContainer onClick={() => handleClickAbout('/', false)}>
+      <St.TitleContainer onClick={() => handleClickAbout('/')}>
         <St.Title>gledson.dev</St.Title>
       </St.TitleContainer>
       <St.OptionsContainer>
-        <St.Option onClick={() => handleClickAbout('/', false)}>
+        <St.Option
+          actived={currentOption[0]}
+          onClick={() => handleClickAbout('/')}
+        >
           <St.DescriptionOption>Home</St.DescriptionOption>
         </St.Option>
-        <St.Option onClick={() => handleClickAbout('/projects', false)}>
+        <St.Option
+          actived={currentOption[1]}
+          onClick={() => handleClickAbout('/projects')}
+        >
           <St.DescriptionOption>Projetos</St.DescriptionOption>
         </St.Option>
-        <St.Option onClick={() => handleClickAbout('/about', false)}>
+        <St.Option
+          actived={currentOption[2]}
+          onClick={() => handleClickAbout('/about')}
+        >
           <St.DescriptionOption>Sobre</St.DescriptionOption>
         </St.Option>
-        <St.Option onClick={() => handleClickAbout('/contact', false)}>
+        <St.Option
+          actived={currentOption[3]}
+          onClick={() => handleClickAbout('/contact')}
+        >
           <St.DescriptionOption>Contato</St.DescriptionOption>
         </St.Option>
       </St.OptionsContainer>
@@ -53,4 +57,4 @@ const HeaderDesktop: React.FC = () => {
   )
 }
 
-export default HeaderDesktop
+export default DesktopHeader

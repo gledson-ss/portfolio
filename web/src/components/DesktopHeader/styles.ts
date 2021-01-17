@@ -77,11 +77,11 @@ export const Option = styled.button<propsOption>`
 
   :focus {
     outline: none;
-    @media (min-width: 768px) {
-      ${underlineOption}
-    }
+    ${underlineOption}
   }
-
+  :hover {
+    cursor: pointer;
+  }
   /* ${({ actived }) => {
     if (actived) {
       return underlineOption
