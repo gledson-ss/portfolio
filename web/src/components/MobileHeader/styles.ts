@@ -27,7 +27,7 @@ const OptionsContainerStyle = css`
 const fontProza = css`
   @font-face {
     font-family: praza;
-    src: url('/fonts/proza-libre/ProzaLibre-Medium.ttf');
+    src: url('/fonts/proza_libre/ProzaLibre-Medium.ttf');
   }
   font-family: praza;
 `

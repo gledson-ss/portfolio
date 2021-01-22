@@ -2,20 +2,20 @@ import React from 'react'
 
 import * as St from './styles'
 
-interface HeaderContainerProps {
+interface HeaderDescriptionProps {
   Title: string
   Description: string
 }
 
-const HeaderContainer: React.FC<HeaderContainerProps> = ({
+const HeaderDescription: React.FC<HeaderDescriptionProps> = ({
   Title,
   Description
 }) => {
   return (
     <St.Container>
-      <St.TitleHeaderContainer>
+      <St.TitleHeaderDescription>
         <St.Title>{Title}</St.Title>
-      </St.TitleHeaderContainer>
+      </St.TitleHeaderDescription>
       <St.TitleDescriptionContainer>
         <St.Description>{Description}</St.Description>
       </St.TitleDescriptionContainer>
@@ -23,4 +23,4 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
   )
 }
 
-export default HeaderContainer
+export default HeaderDescription

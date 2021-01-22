@@ -69,7 +69,7 @@ export const Message = styled.p`
   font-size: 36px;
   @font-face {
     font-family: proza;
-    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+    src: url('/fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};
@@ -121,7 +121,7 @@ export const Title = styled.p`
   font-size: 24px;
   @font-face {
     font-family: proza;
-    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+    src: url('/fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};

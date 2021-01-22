@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: space-between;
 `
 
-export const TitleHeaderContainer = styled.div`
+export const TitleHeaderDescription = styled.div`
   display: flex;
   @media (max-width: 767px) {
     justify-content: center;
@@ -18,7 +18,7 @@ export const Title = styled.p`
   font-size: 52px;
   @font-face {
     font-family: proza;
-    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+    src: url('/fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};

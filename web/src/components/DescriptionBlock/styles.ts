@@ -67,7 +67,7 @@ export const Text = styled.p`
   }
   @font-face {
     font-family: Proza;
-    src: url('./fonts/proza-libre/ProzaLibre-Regular.ttf');
+    src: url('./fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: Proza;
 `

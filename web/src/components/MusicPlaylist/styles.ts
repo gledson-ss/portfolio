@@ -53,7 +53,7 @@ export const Description = styled.p`
   font-size: 32px;
   @font-face {
     font-family: proza;
-    src: url('/fonts/proza-libre/ProzaLibre-Regular.ttf');
+    src: url('/fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
   color: ${({ theme }) => theme.colors.black};
