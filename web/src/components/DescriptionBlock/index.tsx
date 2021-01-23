@@ -20,7 +20,10 @@ const DescriptionBlock: React.FC = () => {
           <St.Text>Sou desenvolvedor fullstack</St.Text>
           <St.Text>Desenvolvi este site utilizando Next.js</St.Text>
         </St.TextContainer>
-        <Button info="Veja meus projetos" />
+
+        <St.ButtonContainer>
+          <Button info="Veja meus projetos" />
+        </St.ButtonContainer>
       </St.InfoContainer>
     </St.Container>
   )

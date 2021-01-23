@@ -71,3 +71,10 @@ export const Text = styled.p`
   }
   font-family: Proza;
 `
+export const ButtonContainer = styled.div`
+  grid-area: option;
+`
+
+export const Link = styled.a`
+  text-decoration: none;
+`
