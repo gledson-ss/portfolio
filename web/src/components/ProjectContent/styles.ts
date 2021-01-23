@@ -10,7 +10,7 @@ export const Container = styled.div<containerProps>`
   display: flex;
   justify-content: ${({ leftPosition }) =>
     leftPosition ? 'flex-start' : 'flex-end'};
-  padding: 0 5vw;
+  padding: 80px 5vw;
 `
 
 export const GridContainer = styled.div`
@@ -25,7 +25,10 @@ export const ImageBlock = styled.div`
   height: 100%;
   padding: 0 1.2vw;
 `
-export const GitImage = styled(Image)``
+export const GitImage = styled.img`
+  width: 400px;
+  height: 300px;
+`
 
 export const InitialBlock = styled.div``
 
@@ -53,7 +56,7 @@ export const ProjectName = styled.p`
   font-size: 1.8vw;
 `
 
-export const Link = styled.link``
+export const Link = styled.a``
 
 export const GithubIcon = styled(FaGithubAlt)`
   width: 1.2vw;
