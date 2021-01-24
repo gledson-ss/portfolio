@@ -7,6 +7,7 @@ const Home: React.FC = () => {
     <div>
       <Head>
         <title>gledson.dev</title>
+        <link rel="shortcut icon" href="/Icon/gIcon.png" />
       </Head>
       <HomeMain />
     </div>
