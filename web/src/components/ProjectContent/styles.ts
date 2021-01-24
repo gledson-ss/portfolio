@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FaGithubAlt } from 'react-icons/fa'
 import styled from 'styled-components'
 
@@ -11,6 +10,10 @@ export const Container = styled.div<containerProps>`
   justify-content: ${({ leftPosition }) =>
     leftPosition ? 'flex-start' : 'flex-end'};
   padding: 80px 5vw;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
 `
 
 export const GridContainer = styled.div`
@@ -18,25 +21,52 @@ export const GridContainer = styled.div`
   grid-template-areas: 'ImageBlock LinkBlock' 'ImageBlock NameBlock' 'ImageBlock DescriptionBlock';
   grid-template-columns: auto 1fr;
   grid-template-rows: 10% 30% 60%;
+
+  border: 1px solid red;
+  @media (max-width: 767px) {
+    grid-template-areas: 'ImageBlock LinkBlock' 'NameBlock NameBlock' 'DescriptionBlock DescriptionBlock';
+    grid-template-rows: 40% 10% 50%;
+    height: 450px;
+  }
+  @media (min-width: 1280px) {
+    width: 70%;
+  }
 `
 
 export const ImageBlock = styled.div`
   grid-area: ImageBlock;
-  height: 100%;
   padding: 0 1.2vw;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 `
+
 export const GitImage = styled.img`
   width: 400px;
-  height: 300px;
+  height: 250px;
+
+  @media (max-width: 767px) {
+    width: 350px;
+    height: 100%;
+  }
+
+  @media (max-width: 420px) {
+    width: 280px;
+    height: 100%;
+  }
 `
 
 export const InitialBlock = styled.div``
 
 export const NameBlock = styled.div`
   grid-area: NameBlock;
-  height: 100%;
   display: flex;
   align-items: center;
+  border: 1px solid blue;
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
 `
 
 export const BoxName = styled.div`
@@ -46,21 +76,29 @@ export const BoxName = styled.div`
   margin-left: -150px;
   padding: 1.5vh 1.5vw;
   background-color: ${({ theme }) => theme.colors.blue};
+  @media (max-width: 767px) {
+    margin: 0;
+    width: 100%;
+  }
 `
+
 export const ProjectName = styled.p`
   @font-face {
     font-family: proza;
     src: url('/fonts/proza_libre/ProzaLibre-Regular.ttf');
   }
   font-family: proza;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 `
 
 export const Link = styled.a``
 
 export const GithubIcon = styled(FaGithubAlt)`
-  width: 1.2vw;
-  height: 2.4vh;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.darkGray};
 `
@@ -68,12 +106,18 @@ export const GithubIcon = styled(FaGithubAlt)`
 export const LinkBlock = styled.div`
   grid-area: LinkBlock;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  border: 3px solid green;
+
+  @media (max-width: 767px) {
+    align-items: flex-start;
+    justify-content: center;
+  }
 `
 
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
-  width: 20vw;
+  border: 1px solid violet;
 `
 
 export const Description = styled.p`
@@ -82,4 +126,7 @@ export const Description = styled.p`
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: open;
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
 `
