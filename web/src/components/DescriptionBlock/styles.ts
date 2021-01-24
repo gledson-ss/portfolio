@@ -51,11 +51,16 @@ export const InfoContainer = styled.div`
   }
 `
 export const TextContainer = styled.div`
+  grid-area: text;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  grid-area: text;
+  padding-top: 10px;
+  #LineNextJs {
+    padding-top: 10px;
+    font-style: italic;
+  }
 `
 
 export const Text = styled.p`

@@ -19,7 +19,9 @@ const DescriptionBlock: React.FC = () => {
           <St.Text>de software e hardware, sempre</St.Text>
           <St.Text>buscando me atualizar sobre as</St.Text>
           <St.Text>tecnologias mais relevantes.</St.Text>
-          <St.Text>Desenvolvi este site utilizando Next.js</St.Text>
+          <St.Text id="LineNextJs">
+            Desenvolvi este site utilizando Next.js
+          </St.Text>
         </St.TextContainer>
 
         <St.ButtonContainer>
