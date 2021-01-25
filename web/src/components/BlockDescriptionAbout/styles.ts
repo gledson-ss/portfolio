@@ -58,7 +58,7 @@ export const VectorContainer = styled.div`
 `
 
 export const Vector = styled(Image)`
-  width: 20vw;
+  width: 18vw;
   @media (max-width: 767px) {
     width: 40vw;
   }

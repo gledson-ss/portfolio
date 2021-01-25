@@ -11,8 +11,9 @@ const GamerSection: React.FC = () => {
         </St.TitleContainer>
         <St.DescriptionContainer>
           <St.Description>
-            Risus aliquam libero urna, lacus, ridiculus id auctor. felis,
-            tristique ut. Risus aliquam libero urna, lacus, ridiculus id auctor.
+            Gosto de jogos elétronicos para descontrair, sendo os de fps(first
+            person shooter), aventura e estratégias os que mais curto jogar.
+            Segue uma lista de jogos que mais gosto.
           </St.Description>
         </St.DescriptionContainer>
       </St.DescriptionBlock>

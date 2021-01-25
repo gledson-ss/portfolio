@@ -48,12 +48,11 @@ const About: React.FC = () => {
                 </St.TitleDescriptionContainer>
                 <St.DescriptionBlockContainer>
                   <St.DescriptionBlock>
-                    Et cursus sed senectus tellus placerat risus faucibus
-                    faucibus. Quam ut iaculis integer a, diam pellentesque
-                    mauris aliquet. At id non nascetur tempor rhoncus, felis,
-                    tristique ut. Risus aliquam libero urna, lacus, ridiculus id
-                    auctor. felis, tristique ut. Risus aliquam libero urna,
-                    lacus, ridiculus id auctor.
+                    Toco violão há muitos anos, faço aulas com professor
+                    particular e estudo música por prazer. Durante muitos anos
+                    venho estudando e praticando técnicas para executar uma
+                    música de boa qualidade, aprendendo música clássica,
+                    erudita, contemporanea e etc.
                   </St.DescriptionBlock>
                 </St.DescriptionBlockContainer>
               </St.GuitarDescriptionContainer>
@@ -73,9 +72,9 @@ const About: React.FC = () => {
             </St.TitleDescriptionContainer>
             <St.DescriptionBlockContainer>
               <St.DescriptionBlock>
-                Risus aliquam libero urna, lacus, ridiculus id auctor. felis,
-                tristique ut. Risus aliquam libero urna, lacus, ridiculus id
-                auctor.
+                Gosto de escutar diversos tipos de música, rock, clássico,
+                sertanejo, forró, eletrônico, rap, pop, mpb e etc. Procuro ouvir
+                as mais variadas bandas possíveis.
               </St.DescriptionBlock>
             </St.DescriptionBlockContainer>
           </St.TopMusicDescriptionContainer>

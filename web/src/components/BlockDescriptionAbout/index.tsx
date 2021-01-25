@@ -8,22 +8,21 @@ const BlockDescriptionAbout: React.FC = () => {
       <St.InformationBlock>
         <St.TextContainer>
           <St.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh turpis
-            fermentum mauris sed tristique. Neque sed lectus erat dictum tellus
-            eget. Iaculis elementum nunc ultrices non arcu tincidunt eu.
-            Convallis leo tortor vel, purus. Adipiscing sapien rhoncus nibh
-            aliquam magna in sed in. Lectus nibh gravida eu tincidunt purus
-            diam. Est vulputate turpis vitae at duis ultricies magna ac.
-            Placerat ultrices mattis neque eu elementum egestas amet. Tempor,
-            consectetur posuere quis praesent nunc blandit. Pulvinar molestie
-            leo, etiam et. Facilisi mauris sodales porttitor non, amet lorem
-            habitasse lacus. Fusce fames a eu, faucibus in nibh eget turpis eu.
-            Eu ultrices scelerisque sapien et, amet. Diam integer ullamcorper
-            ullamcorper vel pulvinar. Et cursus sed senectus tellus placerat
-            risus faucibus faucibus. Quam ut iaculis integer a, diam
-            pellentesque mauris aliquet. At id non nascetur tempor rhoncus,
-            felis, tristique ut. Risus aliquam libero urna, lacus, ridiculus id
-            auctor.
+            Sou estudante de Engenharia de Computação, no Instituto Federal da
+            Paraíba em Campina Grande . Tenho experiência na área de programação
+            e eletrônica, desenvolvendo projetos envolvendo frontend, backend,
+            mobile e microcontroladores. Começei a entrar no mundo da
+            programação no início de 2018, e, desde então, venho aprimorando os
+            conhecimentos na área de tecnologia. Ademais, na área de software,
+            crio e projeto aplicações de web sites, apps desktop e mobile, já na
+            area de hardware , tenho expericia em atividades no âmbito de
+            sistemas embarcados e automação, programando microcontroladores,
+            podendo ser para diversas aplicações. Custumo trabalhar utilizando
+            diversas ferramentas para boas práticas e maneiras otimizadas de
+            organizar meu trabalho, utilizando sempre o github para
+            versionamento de código de projetos ou somente para estudo, além
+            disso, ferramentas para organizar o dia a dia, como notion, google
+            agendas e etc.
           </St.Text>
         </St.TextContainer>
         <St.VectorContainer>
