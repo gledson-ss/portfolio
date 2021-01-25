@@ -56,7 +56,7 @@ Olá, meu nome é Gledson. Sou desenvolvedor fullstack Desenvolvo projetos na á
   - Typescript
   - Styled-components 
   - React Icons
-  - eslint
+  - Eslint
 
 ## 🔒 License
 
