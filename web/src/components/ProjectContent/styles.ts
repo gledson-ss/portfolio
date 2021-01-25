@@ -22,7 +22,6 @@ export const GridContainer = styled.div`
   grid-template-columns: auto 1fr;
   grid-template-rows: 10% 30% 60%;
 
-  border: 1px solid red;
   @media (max-width: 767px) {
     grid-template-areas: 'ImageBlock LinkBlock' 'NameBlock NameBlock' 'DescriptionBlock DescriptionBlock';
     grid-template-rows: 40% 10% 50%;
@@ -63,7 +62,7 @@ export const NameBlock = styled.div`
   grid-area: NameBlock;
   display: flex;
   align-items: center;
-  border: 1px solid blue;
+
   @media (max-width: 767px) {
     justify-content: center;
   }
@@ -107,7 +106,6 @@ export const LinkBlock = styled.div`
   grid-area: LinkBlock;
   display: flex;
   align-items: center;
-  border: 3px solid green;
 
   @media (max-width: 767px) {
     align-items: flex-start;
@@ -117,7 +115,6 @@ export const LinkBlock = styled.div`
 
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
-  border: 1px solid violet;
 `
 
 export const Description = styled.p`
