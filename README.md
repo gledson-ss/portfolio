@@ -19,7 +19,8 @@
 </p>
 
 ## 📖 Description
-    Olá, meu nome é Gledson. Sou desenvolvedor fullstack Desenvolvo projetos na área de software e hardware. Desenvolvi este web site para colocar meus projetos, fatos sobre mim, e, se tiver interessado, envie um e-mail ou acesse alguma das minhas redes sociais :punch:.
+Olá, meu nome é Gledson. Sou desenvolvedor fullstack Desenvolvo projetos na área de software e hardware. Desenvolvi este web site para colocar meus projetos, fatos sobre mim, e, se tiver interessado, envie um e-mail ou acesse alguma das minhas redes sociais 👊 .
+
 ## 🚀 Getting Started
 
 1. Download the repository
