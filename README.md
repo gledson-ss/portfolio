@@ -19,7 +19,7 @@
 </p>
 
 ## 📖 Description
-    Desenvolvi este web site para colocar meus projetos e fatos sobre mim.
+    Olá, meu nome é Gledson. Sou desenvolvedor fullstack Desenvolvo projetos na área de software e hardware. Desenvolvi este web site para colocar meus projetos, fatos sobre mim, e, se tiver interessado, envie um e-mail ou acesse alguma das minhas redes sociais :punch:.
 ## 🚀 Getting Started
 
 1. Download the repository
@@ -32,9 +32,9 @@
 ```shell
   gh repo clone gledson-ss/porfolio
 ```
-  > :bulb: or whichever way you prefer
+  > :pushpin: or just do as you wish
 
-2. Installation
+1. Installation
   - Using `yarn` in web folder
    ```shell
    yarn
