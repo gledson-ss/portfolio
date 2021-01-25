@@ -8,7 +8,7 @@ interface CarouselVideoProps {
   name?: string
   setIndexArray?: React.Dispatch<React.SetStateAction<number>>
   indexArray?: number
-  sizeArray: number
+  sizeArray?: number
 }
 
 const CarouselVideo: React.FC<CarouselVideoProps> = ({
