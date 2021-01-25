@@ -3,30 +3,53 @@ import React from 'react'
 import * as St from './styles'
 
 interface CarouselVideoProps {
-  hasTitle: boolean
+  isVideo?: boolean
+  media?: string
+  name?: string
+  setIndexArray?: React.Dispatch<React.SetStateAction<number>>
+  indexArray?: number
+  sizeArray: number
 }
 
-const CarouselVideo: React.FC<CarouselVideoProps> = ({ hasTitle }) => {
+const CarouselVideo: React.FC<CarouselVideoProps> = ({
+  isVideo,
+  media,
+  name,
+  setIndexArray,
+  indexArray,
+  sizeArray
+}) => {
+  function growUpIndexArray() {
+    if (indexArray === sizeArray) {
+      setIndexArray(0)
+      return
+    }
+    setIndexArray(indexArray + 1)
+  }
+  function growDownIndexArray() {
+    if (indexArray === 0) {
+      setIndexArray(sizeArray)
+      return
+    }
+    setIndexArray(indexArray - 1)
+  }
   return (
     <St.Container>
       <St.CarouselContainer>
         <St.CarouselVideoContainer>
           <St.ArrowContainer side="left">
-            <St.ArrowButton>
+            <St.ArrowButton onClick={() => growDownIndexArray()}>
               <St.ArrowLeftIcon />
             </St.ArrowButton>
           </St.ArrowContainer>
           <St.VideoContainer>
             <St.TitleContainer>
-              {hasTitle && <St.Title>eu odeios os minios</St.Title>}
+              <St.Title>{name}</St.Title>
             </St.TitleContainer>
-            <St.Video
-              src="https://drive.google.com/file/d/1qwhJJ-IS-0ezRDRX2rQ_MlRn1tKMWhI7/preview"
-              allowFullScreen={true}
-            />
+            {isVideo ? <St.Video src={media} /> : <St.Image src={media} />}
           </St.VideoContainer>
           <St.ArrowContainer side="right">
-            <St.ArrowButton>
+            <St.ArrowButton onClick={() => growUpIndexArray()}>
               <St.ArrowRightIcon />
             </St.ArrowButton>
           </St.ArrowContainer>

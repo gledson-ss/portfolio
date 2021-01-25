@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+import GamesJson from '../../utils/games.json'
 import CarouselVideo from '../CarouselVideo'
 import * as St from './styles'
 const GamerSection: React.FC = () => {
+  const [gamesArray, setGamesArray] = useState(Object.entries(GamesJson))
+  const [index, setIndex] = useState<number>(0)
+
   return (
     <St.Container>
       <St.DescriptionBlock>
@@ -12,8 +16,8 @@ const GamerSection: React.FC = () => {
         <St.DescriptionContainer>
           <St.Description>
             Gosto de jogos elétronicos para descontrair, sendo os de fps(first
-            person shooter), aventura e estratégias os que mais curto jogar.
-            Segue uma lista de jogos que mais gosto.
+            person shooter), aventura, puzzle os que mais curto jogar. Segue uma
+            lista dos meus jogos favoritos.
           </St.Description>
         </St.DescriptionContainer>
       </St.DescriptionBlock>
@@ -21,7 +25,14 @@ const GamerSection: React.FC = () => {
         <St.ControlImage unsized={true} src="/vectors/Vector7.png" />
       </St.ImageContainer>
       <St.CorouselContainer>
-        <CarouselVideo hasTitle={false} />
+        <CarouselVideo
+          key={gamesArray[index][1].name}
+          name={gamesArray[index][1].name}
+          media={gamesArray[index][1].image}
+          setIndexArray={setIndex}
+          indexArray={index}
+          sizeArray={gamesArray.length - 1}
+        />
       </St.CorouselContainer>
     </St.Container>
   )

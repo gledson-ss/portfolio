@@ -1,0 +1,82 @@
+{
+  "csgo": {
+    "image": "https://manualdosgames.com/wp-content/uploads/2020/02/CS.jpg",
+    "name": "Counter Strike Global Ofense"
+  },
+  "rl": {
+    "image": "https://rocketleague.media.zestyio.com/rl_home_f2p-launch_cross_10656.jpg",
+    "name": "Rocket League"
+  },
+  "cod": {
+    "image": "https://wallpapercave.com/wp/wp5825925.jpg",
+    "name": "Call Of Duty Warzone"
+  },
+  "fg": {
+    "image": "https://wallpaperaccess.com/full/3511118.jpg",
+    "name": "Fall Guys"
+  },
+  "subnautica": {
+    "image": "https://i.pinimg.com/originals/ac/01/84/ac01847f25d1d1d0207d630c7ac401b6.jpg",
+    "name": "Subnautica"
+  },
+  "rs4": {
+    "image": "https://gamenoticia.com.br/wp-content/uploads/2020/04/Resident-Evil-4.jpg",
+    "name": "Resident Evil 4"
+  },
+  "smb": {
+    "image": "https://images3.alphacoders.com/223/thumb-1920-223187.jpg",
+    "name": "Super Meat Boys"
+  },
+  "layers": {
+    "image": "https://wallpapercave.com/wp/wp4769598.jpg",
+    "name": "Layers Of Fear"
+  },
+  "broforce": {
+    "image": "https://wallpapercave.com/wp/wp3121916.jpg",
+    "name": "Broforce"
+  },
+  "Limbo": {
+    "image": "https://wallpapercave.com/wp/EqkpIrt.jpg",
+    "name": "Limbo"
+  },
+  "Trine": {
+    "image": "https://i.pinimg.com/originals/73/00/6b/73006b79cd3f7fa8724842a24f43d1c1.jpg",
+    "name": "Trine"
+  },
+  "Bordelands": {
+    "image": "https://wallpaperaccess.com/full/1543469.jpg",
+    "name": "Bordelands"
+  },
+  "Cuphead": {
+    "image": "https://wallpapercave.com/wp/wp2206815.jpg",
+    "name": "Cuphead"
+  },
+  "lis": {
+    "image": "https://cdn.wallpapersafari.com/3/21/NIBsTz.jpg",
+    "name": "Life Is Strange"
+  },
+  "Portal": {
+    "image": "https://images4.alphacoders.com/212/thumb-1920-212414.jpg",
+    "name": "Portal 2"
+  },
+  "Crash": {
+    "image": "https://images8.alphacoders.com/860/thumb-1920-860072.jpg",
+    "name": "Crash Bandicoot"
+  },
+  "Pinstripe": {
+    "image": "https://gameovermanaus.com/wp-content/uploads/pinstripe.jpg",
+    "name": "Pinstripe"
+  },
+  "Outlast": {
+    "image": "https://wallpapercave.com/wp/wp1872476.jpg",
+    "name": "Outlast"
+  },
+  "Dl": {
+    "image": "https://wallpaperaccess.com/full/427825.jpg",
+    "name": "Dying Light"
+  },
+  "tr": {
+    "image": "https://laracroft.com.br/assets/uploads/2012/10/WPID21_1920x1080.jpg",
+    "name": "Tomb Raider"
+  }
+}

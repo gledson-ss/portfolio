@@ -95,7 +95,23 @@ export const VideoContainer = styled.div`
 `
 
 export const Video = styled.iframe`
-  width: 26vw;
+  width: 28vw;
+  height: 30vh;
+  border: 10px solid ${({ theme }) => theme.colors.blue};
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 1280px) {
+    width: 40vw;
+    height: 35vh;
+  }
+  @media (max-width: 920px) {
+    width: 50vw;
+    height: 35vh;
+  }
+`
+
+export const Image = styled.img`
+  width: 28vw;
   height: 30vh;
   border: 10px solid ${({ theme }) => theme.colors.blue};
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
