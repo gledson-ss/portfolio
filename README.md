@@ -55,8 +55,9 @@ Olá, meu nome é Gledson. Sou desenvolvedor fullstack Desenvolvo projetos na á
   - React
   - Typescript
   - Styled-components 
+  - React Icons
+  - eslint
 
-
-## :memo: License
+## 🔒 License
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
