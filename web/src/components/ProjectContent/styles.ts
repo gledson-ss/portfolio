@@ -1,14 +1,23 @@
 import { FaGithubAlt } from 'react-icons/fa'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-interface containerProps {
-  leftPosition: boolean
+interface blockProps {
+  isDislocated: boolean
 }
 
-export const Container = styled.div<containerProps>`
+export const Block = styled.div<blockProps>`
   display: flex;
-  justify-content: ${({ leftPosition }) =>
-    leftPosition ? 'flex-start' : 'flex-end'};
+  justify-content: ${({ isDislocated }) =>
+    isDislocated ? 'flex-start' : 'flex-end'};
+
+  @media (max-width: 767px) {
+    justify-content: center;
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+
   padding: 80px 5vw;
 
   @media (max-width: 767px) {
@@ -72,7 +81,7 @@ export const BoxName = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -150px;
+  margin-left: -100px;
   padding: 1.5vh 1.5vw;
   background-color: ${({ theme }) => theme.colors.blue};
   @media (max-width: 767px) {
@@ -115,6 +124,7 @@ export const LinkBlock = styled.div`
 
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
+  width: 400px;
 `
 
 export const Description = styled.p`

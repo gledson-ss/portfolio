@@ -14,8 +14,6 @@ export const HeaderDescriptionContainer = styled.div`
 export const ProjectsBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 100px;
-
   @media (max-width: 767px) {
     margin: 0;
   }

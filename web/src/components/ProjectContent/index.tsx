@@ -18,28 +18,30 @@ const ProjectContent: React.FC<projectProps> = ({
   position
 }) => {
   return (
-    <St.Container leftPosition={position}>
-      <St.GridContainer>
-        <St.ImageBlock>
-          <St.GitImage src={image} />
-        </St.ImageBlock>
+    <St.Block isDislocated={position}>
+      <St.Container>
+        <St.GridContainer>
+          <St.ImageBlock>
+            <St.GitImage src={image} />
+          </St.ImageBlock>
 
-        <St.LinkBlock>
-          <St.Link href={linkRepo} target="blank">
-            <St.GithubIcon />
-          </St.Link>
-        </St.LinkBlock>
-        <St.NameBlock>
-          <St.BoxName>
-            <St.ProjectName>{name}</St.ProjectName>
-          </St.BoxName>
-        </St.NameBlock>
+          <St.LinkBlock>
+            <St.Link href={linkRepo} target="blank">
+              <St.GithubIcon />
+            </St.Link>
+          </St.LinkBlock>
+          <St.NameBlock>
+            <St.BoxName>
+              <St.ProjectName>{name}</St.ProjectName>
+            </St.BoxName>
+          </St.NameBlock>
 
-        <St.DescriptionBlock>
-          <St.Description>{description}</St.Description>
-        </St.DescriptionBlock>
-      </St.GridContainer>
-    </St.Container>
+          <St.DescriptionBlock>
+            <St.Description>{description}</St.Description>
+          </St.DescriptionBlock>
+        </St.GridContainer>
+      </St.Container>
+    </St.Block>
   )
 }
 

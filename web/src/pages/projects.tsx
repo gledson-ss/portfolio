@@ -8,7 +8,7 @@ import ProjectsInfo from '../utils/projects.json'
 
 const Projects: React.FC = () => {
   const [array, setArray] = useState(Object.entries(ProjectsInfo))
-  const [arraySize, setArraySize] = useState<number>(1)
+  const [arraySize, setArraySize] = useState<number>(2)
   return (
     <St.Container>
       <St.HeaderDescriptionContainer>
@@ -26,13 +26,13 @@ const Projects: React.FC = () => {
               image={e[1].image}
               linkRepo={e[1].linkRepo}
               description={e[1].description}
-              position={e[1].left}
+              position={e[1].position}
             />
           )
         })}
       </St.ProjectsBlock>
       <St.ButtonContainer>
-        <St.Button onClick={() => setArraySize(4)}>
+        <St.Button onClick={() => setArraySize(arraySize + 1)}>
           <St.Text id="text">Carregar mais</St.Text>
         </St.Button>
       </St.ButtonContainer>
