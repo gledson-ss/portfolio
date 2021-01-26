@@ -7,7 +7,7 @@ import * as St from '../styles/pages/projects'
 import ProjectsInfo from '../utils/projects.json'
 
 const Projects: React.FC = () => {
-  const [array, setArray] = useState(Object.entries(ProjectsInfo))
+  const [array] = useState(Object.entries(ProjectsInfo))
   const [arraySize, setArraySize] = useState<number>(3)
   function handleGrowUpArray() {
     if (arraySize < array.length) {
