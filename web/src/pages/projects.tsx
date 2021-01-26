@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       <St.HeaderDescriptionContainer>
         <HeaderDescription
           Title="Projetos"
-          Description="Projetos que desenvolvi ao longo do tempo"
+          Description="Projetos que desenvolvi ao longo do tempo, acesse os repositórios e veja como cada projeto foi construído."
         />
       </St.HeaderDescriptionContainer>
 
