@@ -70,7 +70,7 @@
     "position": false
   },
   "webViewElectron": {
-    "description": "Player de video em um app Desktop de um site específico, sem a necessidade de abrir o navegador",
+    "description": "Player de video em um app Desktop de um site específico, sem a necessidade de abrir o navegador.",
     "image": "/photos/projects/electronjs.png",
     "linkRepo": "https://github.com/gledson-ss/simple-webview-eletctron",
     "name": "App ElectronJs",
