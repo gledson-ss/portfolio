@@ -25,7 +25,6 @@ const Projects: React.FC = () => {
 
       <St.ProjectsBlock>
         {array.slice(0, arraySize).map((e, index) => {
-          console.log(index)
           return (
             <St.Block isDislocated={e[1].position} key={index}>
               <ProjectContent
