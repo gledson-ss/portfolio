@@ -9,6 +9,11 @@ import ProjectsInfo from '../utils/projects.json'
 const Projects: React.FC = () => {
   const [array, setArray] = useState(Object.entries(ProjectsInfo))
   const [arraySize, setArraySize] = useState<number>(2)
+  function handleGrowUpArray() {
+    if (arraySize < array.length) {
+      setArraySize(arraySize + 1)
+    }
+  }
   return (
     <St.Container>
       <St.HeaderDescriptionContainer>
@@ -32,7 +37,7 @@ const Projects: React.FC = () => {
         })}
       </St.ProjectsBlock>
       <St.ButtonContainer>
-        <St.Button onClick={() => setArraySize(arraySize + 1)}>
+        <St.Button onClick={() => handleGrowUpArray()}>
           <St.Text id="text">Carregar mais</St.Text>
         </St.Button>
       </St.ButtonContainer>
