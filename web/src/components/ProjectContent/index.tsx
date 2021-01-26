@@ -7,41 +7,37 @@ interface projectProps {
   image: string
   linkRepo: string
   name: string
-  position: boolean
 }
 
 const ProjectContent: React.FC<projectProps> = ({
   description,
   image,
   linkRepo,
-  name,
-  position
+  name
 }) => {
   return (
-    <St.Block isDislocated={position}>
-      <St.Container>
-        <St.GridContainer>
-          <St.ImageBlock>
-            <St.GitImage src={image} />
-          </St.ImageBlock>
+    <St.Container>
+      <St.GridContainer>
+        <St.ImageBlock>
+          <St.GitImage src={image} />
+        </St.ImageBlock>
 
-          <St.LinkBlock>
-            <St.Link href={linkRepo} target="blank">
-              <St.GithubIcon />
-            </St.Link>
-          </St.LinkBlock>
-          <St.NameBlock>
-            <St.BoxName>
-              <St.ProjectName>{name}</St.ProjectName>
-            </St.BoxName>
-          </St.NameBlock>
+        <St.LinkBlock>
+          <St.Link href={linkRepo} target="blank">
+            <St.GithubIcon />
+          </St.Link>
+        </St.LinkBlock>
+        <St.NameBlock>
+          <St.BoxName>
+            <St.ProjectName>{name}</St.ProjectName>
+          </St.BoxName>
+        </St.NameBlock>
 
-          <St.DescriptionBlock>
-            <St.Description>{description}</St.Description>
-          </St.DescriptionBlock>
-        </St.GridContainer>
-      </St.Container>
-    </St.Block>
+        <St.DescriptionBlock>
+          <St.Description>{description}</St.Description>
+        </St.DescriptionBlock>
+      </St.GridContainer>
+    </St.Container>
   )
 }
 

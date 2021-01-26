@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <St.Container>
       <St.ImageContainer>
-        <St.ImageBackground src={'/vectors/footer.png'} unsized={true} />
+        <St.ImageBackground src={'/vectors/footer2.png'} unsized={true} />
       </St.ImageContainer>
       <St.OptionContainer>
         <St.ButtonBlock>

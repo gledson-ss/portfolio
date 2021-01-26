@@ -8,7 +8,7 @@ import ProjectsInfo from '../utils/projects.json'
 
 const Projects: React.FC = () => {
   const [array, setArray] = useState(Object.entries(ProjectsInfo))
-  const [arraySize, setArraySize] = useState<number>(2)
+  const [arraySize, setArraySize] = useState<number>(3)
   function handleGrowUpArray() {
     if (arraySize < array.length) {
       setArraySize(arraySize + 1)
@@ -25,15 +25,16 @@ const Projects: React.FC = () => {
 
       <St.ProjectsBlock>
         {array.slice(0, arraySize).map((e, index) => {
+          console.log(index)
           return (
-            <ProjectContent
-              key={index}
-              name={e[1].name}
-              image={e[1].image}
-              linkRepo={e[1].linkRepo}
-              description={e[1].description}
-              position={e[1].position}
-            />
+            <St.Block isDislocated={e[1].position} key={index}>
+              <ProjectContent
+                name={e[1].name}
+                image={e[1].image}
+                linkRepo={e[1].linkRepo}
+                description={e[1].description}
+              />
+            </St.Block>
           )
         })}
       </St.ProjectsBlock>

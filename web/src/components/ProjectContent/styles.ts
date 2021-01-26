@@ -1,24 +1,9 @@
 import { FaGithubAlt } from 'react-icons/fa'
-import styled, { css } from 'styled-components'
-
-interface blockProps {
-  isDislocated: boolean
-}
-
-export const Block = styled.div<blockProps>`
-  display: flex;
-  justify-content: ${({ isDislocated }) =>
-    isDislocated ? 'flex-start' : 'flex-end'};
-
-  @media (max-width: 767px) {
-    justify-content: center;
-  }
-`
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-
-  padding: 80px 5vw;
+  margin: 40px 0;
 
   @media (max-width: 767px) {
     justify-content: center;
