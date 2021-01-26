@@ -22,6 +22,7 @@ const Projects: React.FC = () => {
           Description="Projetos que desenvolvi ao longo do tempo"
         />
       </St.HeaderDescriptionContainer>
+
       <St.ProjectsBlock>
         {array.slice(0, arraySize).map((e, index) => {
           return (

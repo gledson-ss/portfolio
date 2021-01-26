@@ -1,86 +1,79 @@
 {
   "porfolio": {
-    "description": "Acesse o repositório deste web site que você está acessando agora e veja como ficou o projeto.",
-    "image": "",
+    "description": "Projeto de web site que você está acessando neste momente. Este site foi desenvolvido utilizando Next.js (framework javascript baseado em React).",
+    "image": "/photos/projects/portfolio.jpeg",
     "linkRepo": "https://github.com/gledson-ss/portfolio",
     "name": "Portfólio",
     "position": true
   },
   "owlify": {
-    "description": "Sistema de análise de temperatura e umidade de vacinas, utilizando um App mobile, feito com React Native para receber os dados de um servidor implementado em Node.js e mostrar na tela as informações da vacina",
-    "image": "",
+    "description": "Sistema de análise de temperatura e umidade de vacinas, utilizando um App mobile, feito com React Native para receber os dados de um servidor implementado em Node.js e mostrar na tela as informações da vacina.",
+    "image": "/photos/projects/owlify.png",
     "linkRepo": "https://github.com/gledson-ss",
     "name": "Owlify",
     "position": false
   },
   "mountbot": {
     "description": "Chatbot que utiliza o serviço da aws(Amazon Web Services), que usa uma ia para ajudar um cliente a encontrar um produto relevante que ele deseja comprar. Foi o desafio final do programa Gama Academy, patrocinados pela amazon, vtex e a própria Gama Academy, no qual participei da equipe finalista que ficou em segundo lugar.",
-    "image": "",
+    "image": "/photos/projects/mountbot.jpeg",
     "linkRepo": "https://github.com/henry-ns/mountbot",
     "name": "MountBot",
     "position": true
   },
   "tetoSolution": {
     "description": "Chatbot feito com React, os Chatbots vem sendo uma estratégia interessante para o e-commerce e a teto é uma ONG que atua na america latina ajudando a melhorar a vida de pessoas, e, para isso, necessitava de um chatbot apara ajudar as pessoas a conhecerem melhor o projeto deles assim que acessam o site.",
-    "image": "",
+    "image": "/photos/projects/teto.jpeg",
     "linkRepo": "https://github.com/gledson-ss/teto-solution",
     "name": "Teto Solution",
     "position": false
   },
   "olimpiadaRepo": {
     "description": "Algoritmos desenvolvidos em c e c++ para treinamento de olimpíadas de programação, no qual ganhei medalha de honra ao merito na maratona sbc(Sociedade Brasileira de Computação) de programação no final de 2019.",
-    "image": "",
+    "image": "/photos/projects/medalha.jpg",
     "linkRepo": "https://github.com/gledson-ss/programming-training",
     "name": "Olimpíadas de Programação",
     "position": true
   },
   "snake": {
     "description": "Game clássico de snake, feito com arduíno e programado em c++, utilizando um joystick para o player se movimentar e uma tela de led que mostra o game em ação junto com a quantidade de vidas.",
-    "image": "",
+    "image": "/photos/projects/snake.gif",
     "linkRepo": "https://github.com/gledson-ss/game-snake-arduino",
     "name": "Snake Game com Arduíno",
     "position": false
   },
   "uberStatics": {
     "description": "Análise de dados feita utilizando python, dos preços de viagens feitas pelo aplicativo uber, entre todos os bairros de campina grande.",
-    "image": "",
+    "image": "/photos/projects/uber.jpg",
     "linkRepo": "https://github.com/gledson-ss/uber-statistics",
     "name": "Estátisticas do uber",
     "position": true
   },
   "pokestore": {
     "description": "Web page feita em React para um desafio do Gama Academy, com o intuito de criar uma página que disponibilize produtos na tela, consumindo uma api.",
-    "image": "",
+    "image": "https://github.com/gledson-ss/pokestore/raw/master/web/src/assets/Images/pokestore_demo.gif",
     "linkRepo": "https://github.com/gledson-ss/pokestore",
     "name": "Pokestore",
     "position": false
   },
   "courseVtex": {
-    "description": "Curso Vtex para treinar a utlização do Vtex.io para sistema de e-commerce, sendo uma plataforma implementada em React que utiliza um CMS, para tratar melhor os componentes em tela.",
-    "image": "",
+    "description": "Treino da plataforma Vtex para aprender a utlização do Vtex.io no sistema de e-commerce, sendo uma plataforma implementada em React que utiliza um CMS, para tratar melhor os componentes em tela.",
+    "image": "/photos/projects/vtex.jpg",
     "linkRepo": "https://github.com/gledson-ss/service-course",
-    "name": "Curso Vtex",
+    "name": "Treino Vtex",
     "position": true
   },
   "desafioPageJavascript": {
-    "description": "Web page criada com Javascript puro, proposto por um desafio do Gama Academy, para desenvolver uma página web sem usar frameworks e testar os conhecimentos e técnicas na linguagem javascript.",
-    "image": "",
+    "description": "Web page criada com Javascript puro, proposto por um desafio do Gama Academy, para desenvolver uma página web sem usar frameworks e testar os conhecimentos e técnicas na linguagem javascript. Neste caso, utilizei como base o design do site do airbnb. Infelizmente as imagens consumidas pela a api não está mais disponível na web page.",
+    "image": "/photos/projects/airbnbfake.jpeg",
     "linkRepo": "https://github.com/gledson-ss/airbnb-page-fake",
     "name": "Página com Javascript Puro",
     "position": false
   },
   "webViewElectron": {
     "description": "Player de video em um app Desktop de um site específico, sem a necessidade de abrir o navegador",
-    "image": "",
+    "image": "/photos/projects/electronjs.png",
     "linkRepo": "https://github.com/gledson-ss/simple-webview-eletctron",
     "name": "App ElectronJs",
     "position": true
-  },
-  "diaryClass": {
-    "description": "Sistema desenvolvido em Java, que simule o controle de uma caderneta/diário de notas de uma discíplina.",
-    "image": "",
-    "linkRepo": "https://github.com/gledson-ss/class-diary",
-    "name": "Diário de classe simulação",
-    "position": false
   }
 }

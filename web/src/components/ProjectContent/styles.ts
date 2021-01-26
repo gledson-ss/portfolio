@@ -51,8 +51,8 @@ export const ImageBlock = styled.div`
 `
 
 export const GitImage = styled.img`
-  width: 400px;
-  height: 250px;
+  max-width: 450px;
+  max-height: 250px;
 
   @media (max-width: 767px) {
     width: 350px;
@@ -82,8 +82,9 @@ export const BoxName = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: -100px;
-  padding: 1.5vh 1.5vw;
+  padding: 1vh 1vw;
   background-color: ${({ theme }) => theme.colors.blue};
+
   @media (max-width: 767px) {
     margin: 0;
     width: 100%;
