@@ -22,15 +22,27 @@ export const Container = styled.div`
 `
 export const InformationBlock = styled.div`
   grid-area: InformationBlock;
-  /* border: 1px solid black; */
+  width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (min-width: 1280px) {
+    width: 40vw;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `
 export const TextContainer = styled.div`
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 100px;
+
   @media (max-width: 767px) {
+    width: 100%;
     padding: 0 30px;
     margin: 0;
   }
@@ -42,28 +54,38 @@ export const Text = styled.p`
     src: url('/fonts/Open_sans/OpenSans-Regular.ttf');
   }
   font-family: Open;
-  font-size: 1.2vw;
   color: ${({ theme }) => theme.colors.black};
-  @media (max-width: 767px) {
-    font-size: 16px;
+  font-size: 1.02vw;
+
+  @media (max-width: 1280px) {
+    font-size: 1.4vw;
   }
+
   @media (max-width: 500px) {
-    font-size: 12px;
+    font-size: 9px;
   }
 `
 
 export const VectorContainer = styled.div`
   position: absolute;
   z-index: -1;
+  @media (max-width: 767px) {
+    display: none;
+  }
 `
 
 export const Vector = styled(Image)`
-  width: 18vw;
+  @media (max-width: 500px) {
+    width: 50vw;
+  }
   @media (max-width: 767px) {
     width: 40vw;
   }
-  @media (max-width: 500px) {
-    width: 50vw;
+  @media (max-width: 1280px) {
+    width: 30vh;
+  }
+  @media (min-width: 1281px) {
+    height: 48vh;
   }
 `
 export const PhotoContainer = styled.div`

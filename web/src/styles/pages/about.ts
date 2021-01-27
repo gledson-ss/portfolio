@@ -114,6 +114,9 @@ export const DescriptionBlockContainer = styled.div`
   @media (max-width: 767px) {
     width: 100%;
   }
+  @media (max-width: 1280px) {
+    width: 30vw;
+  }
 `
 
 export const DescriptionBlock = styled.p`
