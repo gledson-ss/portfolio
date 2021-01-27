@@ -111,6 +111,9 @@ export const LinkBlock = styled.div`
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
   width: 400px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `
 
 export const Description = styled.p`

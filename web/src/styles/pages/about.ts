@@ -167,6 +167,7 @@ export const TopMusicContainer = styled.div`
 export const TopMusicDescriptionContainer = styled.div`
   margin-top: 3vh;
   @media (max-width: 767px) {
+    margin-top: 140px;
     width: 100%;
   }
 `
