@@ -9,7 +9,6 @@ export const Container = styled.div`
   grid-template-areas: 'a1 a1' 'controlImage carousel';
   /* border: 1px solid red; */
   @media (max-width: 1130px) {
-    grid-template-rows: 30% 70%;
     grid-template-areas: 'a1 a1' 'carousel carousel';
   }
   @media (min-width: 768px) {
@@ -22,9 +21,11 @@ export const DescriptionBlock = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+  /* border: 1px solid red; */
 
   @media (max-width: 767px) {
     justify-content: flex-start;
+    margin-bottom: 60px;
   }
 `
 
