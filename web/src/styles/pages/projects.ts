@@ -8,10 +8,11 @@ export const Container = styled.div``
 
 export const HeaderDescriptionContainer = styled.div`
   padding: 0 100px;
-
+  /* border: 1px solid blue; */
   @media (max-width: 767px) {
     padding: 0;
     margin-top: 10px;
+    margin-bottom: 60px;
   }
 `
 
