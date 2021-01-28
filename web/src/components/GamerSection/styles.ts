@@ -7,7 +7,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'a1 a1' 'controlImage carousel';
-
+  /* border: 1px solid red; */
   @media (max-width: 1130px) {
     grid-template-rows: 30% 70%;
     grid-template-areas: 'a1 a1' 'carousel carousel';

@@ -8,11 +8,13 @@ import HeaderContainer from '../components/HeaderDescription'
 import MusicPlaylist from '../components/MusicPlaylist'
 import TechnologiSection from '../components/TechnologiSection'
 import * as St from '../styles/pages/about'
-
 const About: React.FC = () => {
   return (
     <St.Container>
       <BlockDescriptionAbout />
+      <St.BottomVectorInitialContainer>
+        <St.BottomVector src="/vectors/Vector4.png" unsized={true} />
+      </St.BottomVectorInitialContainer>
       <St.SkillsMusicContainer>
         <St.SkillsMusicVectorContainer>
           <St.VectorRightSkillsMusicContainer
@@ -28,40 +30,39 @@ const About: React.FC = () => {
 
           <TechnologiSection />
         </St.SkillsContainer>
-        <St.MusicContainer>
-          <HeaderContainer
-            Title="Gostos pessoais"
-            Description="Vamo deixar de lado um pouco a parte técnica"
-          />
 
-          <St.GuitarContainer>
-            <St.BlockGuitar>
-              <St.GuitarVectorContainer>
-                <St.GuitarVector
-                  src={'/vectors/guitarVector.png'}
-                  unsized={true}
-                />
-              </St.GuitarVectorContainer>
-              <St.GuitarDescriptionContainer>
-                <St.TitleDescriptionContainer>
-                  <St.TitleBlock>Musica</St.TitleBlock>
-                </St.TitleDescriptionContainer>
-                <St.DescriptionBlockContainer>
-                  <St.DescriptionBlock>
-                    Toco violão há muitos anos, faço aulas com professor
-                    particular e estudo música por prazer. Durante muitos anos
-                    venho estudando e praticando técnicas para executar uma
-                    música de boa qualidade, aprendendo música clássica,
-                    erudita, contemporanea e etc.
-                  </St.DescriptionBlock>
-                </St.DescriptionBlockContainer>
-              </St.GuitarDescriptionContainer>
-            </St.BlockGuitar>
-            <St.MusicVideoSectionContainer>
-              <CarouselVideo />
-            </St.MusicVideoSectionContainer>
-          </St.GuitarContainer>
-        </St.MusicContainer>
+        <HeaderContainer
+          Title="Gostos pessoais"
+          Description="Vamo deixar de lado um pouco a parte técnica"
+        />
+
+        <St.GuitarContainer>
+          <St.BlockGuitar>
+            <St.GuitarVectorContainer>
+              <St.GuitarVector
+                src={'/vectors/guitarVector.png'}
+                unsized={true}
+              />
+            </St.GuitarVectorContainer>
+            <St.MusicTextContainer>
+              <St.TitleDescriptionContainer>
+                <St.TitleBlock>Musica</St.TitleBlock>
+              </St.TitleDescriptionContainer>
+              <St.DescriptionBlockContainer>
+                <St.DescriptionBlock>
+                  Toco violão há muitos anos, faço aulas com professor
+                  particular e estudo música por prazer. Durante muitos anos
+                  venho estudando e praticando técnicas para executar uma música
+                  de boa qualidade, aprendendo música clássica, erudita,
+                  contemporanea e etc.
+                </St.DescriptionBlock>
+              </St.DescriptionBlockContainer>
+            </St.MusicTextContainer>
+          </St.BlockGuitar>
+          <St.MusicVideoSectionContainer>
+            <CarouselVideo />
+          </St.MusicVideoSectionContainer>
+        </St.GuitarContainer>
       </St.SkillsMusicContainer>
       <St.SectionMusicContainer>
         <St.LateralImageLeft src="/vectors/Vector6.png" unsized={true} />

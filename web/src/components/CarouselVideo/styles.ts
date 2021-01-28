@@ -91,10 +91,7 @@ export const ArrowRightIcon = styled(FaAngleRight)`
 `
 
 export const VideoContainer = styled.div`
-  /* border: 4px solid blue; */
-  @media (max-width: 767px) {
-    margin-top: 80px;
-  }
+  /* border: 4px solid green; */
 `
 
 export const Video = styled.iframe`

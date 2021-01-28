@@ -3,11 +3,24 @@ import styled from 'styled-components'
 
 export const Container = styled.div``
 
+export const BottomVectorInitialContainer = styled.div`
+  @media (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const BottomVector = styled(Image)`
+  width: 100%;
+  height: 20vh;
+  @media (max-width: 767px) {
+    height: 29vh;
+  }
+`
+
 export const SkillsMusicContainer = styled.div`
-  height: 149vh;
   position: relative;
   padding: 0 100px;
-  /* border: 1px solid black; */
+  /* border: 1px solid blue; */
   @media (max-width: 767px) {
     padding: 0;
   }
@@ -29,15 +42,26 @@ export const VectorRightSkillsMusicContainer = styled(Image)`
 `
 
 export const SkillsContainer = styled.div`
-  height: 48vh; //48
+  height: 49vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 12vh;
+  /* border: 1px solid violet; */
+  margin-bottom: 60px;
   @media (max-width: 767px) {
     align-items: flex-start;
   }
 `
+
+export const MusicTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+`
+
 export const TitleDescriptionContainer = styled.div`
   display: flex;
   align-items: center;
@@ -46,18 +70,11 @@ export const TitleDescriptionContainer = styled.div`
     justify-content: center;
   }
 `
-export const MusicContainer = styled.div`
-  height: 86vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-`
-
 export const GuitarContainer = styled.div`
-  height: 70%;
   display: flex;
   justify-content: space-between;
-
+  /* border: 1px solid black; */
+  margin: 80px 0;
   @media (max-width: 767px) {
     flex-direction: column;
     height: 80%;
@@ -68,6 +85,10 @@ export const BlockGuitar = styled.div`
   width: 100%;
   display: flex;
   /* border: 1px solid green; */
+  @media (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const GuitarVectorContainer = styled.div``
@@ -85,6 +106,28 @@ export const GuitarDescriptionContainer = styled.div`
   }
 `
 
+export const TopMusicContainer = styled.div`
+  width: 100%;
+  padding: 0 100px;
+  position: absolute;
+  top: 0;
+  /* border: 3px solid violet; */
+  @media (max-width: 1440px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+`
+export const TopMusicDescriptionContainer = styled.div`
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    /* border: 1px solid blue; */
+  }
+`
 export const TitleBlockDescription = styled.div``
 
 export const TitleBlock = styled.p`
@@ -109,13 +152,15 @@ export const TitleBlock = styled.p`
 export const DescriptionBlockContainer = styled.div`
   width: 18vw;
   display: flex;
-  margin-top: 16px;
-
-  @media (max-width: 767px) {
-    width: 100%;
-  }
+  /* border: 1px solid red; */
   @media (max-width: 1280px) {
     width: 30vw;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    justify-content: center;
   }
 `
 
@@ -128,16 +173,19 @@ export const DescriptionBlock = styled.p`
   color: ${({ theme }) => theme.colors.black};
 `
 export const MusicVideoSectionContainer = styled.div`
-  margin-top: 20px;
   display: flex;
   align-items: flex-end;
+  /* border: 3px solid blue; */
 `
 
 export const SectionMusicContainer = styled.div`
-  height: 77vh;
+  height: 60vh;
+
   position: relative;
-  /* border: 1px solid violet; */
-  margin-bottom: 40px;
+  /* border: 2px solid blue; */
+  @media (max-width: 767px) {
+    margin: 60px 0;
+  }
 `
 
 export const LateralImageLeft = styled(Image)`
@@ -152,25 +200,4 @@ export const LateralImageLeft = styled(Image)`
     width: 20px;
     height: 20px;
   } */
-`
-
-export const TopMusicContainer = styled.div`
-  width: 100%;
-  padding: 0 100px;
-  position: absolute;
-  top: 0;
-  /* border: 1px solid red; */
-  @media (max-width: 767px) {
-    padding: 0;
-  }
-  @media (max-width: 1440px) {
-    padding: 0 60px;
-  }
-`
-export const TopMusicDescriptionContainer = styled.div`
-  margin-top: 3vh;
-  @media (max-width: 767px) {
-    margin-top: 140px;
-    width: 100%;
-  }
 `

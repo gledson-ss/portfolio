@@ -21,7 +21,6 @@ export const BlockName = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 30vh;
 `
 export const MusicListContainer = styled.div`
   display: flex;

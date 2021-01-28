@@ -2,26 +2,15 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 90vh;
-  display: grid;
-  grid-template-areas:
-    'InformationBlock BlockImage'
-    'BottomVector BottomVector';
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 70vh 20vh;
+  height: 70vh;
+  display: flex;
   padding: 0 100px;
+  /* border: 1px solid red; */
   @media (max-width: 767px) {
-    grid-template-areas:
-      'InformationBlock InformationBlock'
-      'BottomVector BottomVector';
-    grid-template-columns: 1fr;
     padding: 0;
-
-    grid-template-rows: 60vh 30vh;
   }
 `
 export const InformationBlock = styled.div`
-  grid-area: InformationBlock;
   width: 60vw;
   display: flex;
   justify-content: center;
@@ -32,6 +21,7 @@ export const InformationBlock = styled.div`
   }
   @media (max-width: 767px) {
     width: 100%;
+    align-items: flex-start;
   }
 `
 export const TextContainer = styled.div`
@@ -86,26 +76,5 @@ export const Vector = styled(Image)`
   }
   @media (min-width: 1281px) {
     height: 48vh;
-  }
-`
-export const PhotoContainer = styled.div`
-  grid-area: BlockImage;
-  /* border: 1px solid blue; */
-`
-
-export const BottomVectorInitialContainer = styled.div`
-  grid-area: BottomVector;
-
-  margin: 0 -100px;
-  @media (max-width: 767px) {
-    margin: 0;
-  }
-`
-
-export const BottomVector = styled(Image)`
-  width: 100%;
-  height: 19vh;
-  @media (max-width: 767px) {
-    height: 29vh;
   }
 `

@@ -29,10 +29,6 @@ const BlockDescriptionAbout: React.FC = () => {
           <St.Vector src="/vectors/Vector3.svg" unsized={true} />
         </St.VectorContainer>
       </St.InformationBlock>
-      <St.PhotoContainer />
-      <St.BottomVectorInitialContainer>
-        <St.BottomVector src="/vectors/Vector4.png" unsized={true} />
-      </St.BottomVectorInitialContainer>
     </St.Container>
   )
 }
