@@ -7,6 +7,7 @@ export const Container = styled.div`
 
   @media (max-width: 767px) {
     justify-content: center;
+    margin: 0;
   }
 `
 
@@ -19,7 +20,7 @@ export const GridContainer = styled.div`
   @media (max-width: 767px) {
     grid-template-areas: 'ImageBlock LinkBlock' 'NameBlock NameBlock' 'DescriptionBlock DescriptionBlock';
     grid-template-rows: 40% 10% 50%;
-    height: 450px;
+    margin: 20px;
   }
   @media (min-width: 1280px) {
     width: 70%;
@@ -40,8 +41,6 @@ export const GitImage = styled.img`
   max-height: 250px;
 
   @media (max-width: 767px) {
-    width: 350px;
-    height: 100%;
   }
 
   @media (max-width: 420px) {
@@ -113,6 +112,7 @@ export const DescriptionBlock = styled.div`
   width: 400px;
   @media (max-width: 767px) {
     width: 100%;
+    padding: 0 20px;
   }
 `
 

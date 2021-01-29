@@ -39,6 +39,7 @@ export const TitleDescriptionContainer = styled.div`
 
   @media (max-width: 767px) {
     justify-content: center;
+    padding: 0 40px;
   }
 `
 
