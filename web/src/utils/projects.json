@@ -1,6 +1,6 @@
 {
   "porfolio": {
-    "description": "Projeto de web site que você está acessando neste momente. Este site foi desenvolvido utilizando Next.js (framework javascript baseado em React).",
+    "description": "Projeto de web site que você está acessando neste momento. Este site foi desenvolvido utilizando Next.js (framework javascript baseado em React).",
     "image": "/photos/projects/portfolio.jpeg",
     "linkRepo": "https://github.com/gledson-ss/portfolio",
     "name": "Portfólio",
@@ -28,7 +28,7 @@
     "position": false
   },
   "olimpiadaRepo": {
-    "description": "Algoritmos desenvolvidos em c e c++ para treinamento de olimpíadas de programação, no qual ganhei medalha de honra ao merito na maratona sbc(Sociedade Brasileira de Computação) de programação no final de 2019.",
+    "description": "Algoritmos desenvolvidos em c e c++ para treinamento de olimpíadas de programação, no qual ganhei medalha de honra ao mérito na maratona sbc(Sociedade Brasileira de Computação) no segundo semestre de 2019.",
     "image": "/photos/projects/medalha.jpg",
     "linkRepo": "https://github.com/gledson-ss/programming-training",
     "name": "Olimpíadas de Programação",
