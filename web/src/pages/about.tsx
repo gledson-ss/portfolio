@@ -33,7 +33,7 @@ const About: React.FC = () => {
 
         <HeaderContainer
           Title="Gostos pessoais"
-          Description="Vamo deixar de lado um pouco a parte técnica"
+          Description="Vamos deixar de lado um pouco a parte técnica"
         />
 
         <St.GuitarContainer>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
             </St.GuitarVectorContainer>
             <St.MusicTextContainer>
               <St.TitleDescriptionContainer>
-                <St.TitleBlock>Musica</St.TitleBlock>
+                <St.TitleBlock>Música</St.TitleBlock>
               </St.TitleDescriptionContainer>
               <St.DescriptionBlockContainer>
                 <St.DescriptionBlock>
