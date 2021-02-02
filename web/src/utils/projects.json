@@ -14,7 +14,7 @@
     "position": false
   },
   "mountbot": {
-    "description": "Chatbot que utiliza o serviço da aws(Amazon Web Services), que usa uma ia para ajudar um cliente a encontrar um produto relevante que ele deseja comprar. Foi o desafio final do programa Gama Academy, patrocinados pela amazon, vtex e a própria Gama Academy, no qual participei da equipe finalista que ficou em segundo lugar.",
+    "description": "Chatbot que utiliza o serviço da aws(Amazon Web Services), com uma IA para ajudar um cliente a encontrar um produto relevante que ele deseja comprar. Foi o desafio final do programa Gama Academy, patrocinados pela amazon, vtex e a própria Gama Academy, no qual participei da equipe finalista que ficou em segundo lugar.",
     "image": "/photos/projects/mountbot.jpeg",
     "linkRepo": "https://github.com/henry-ns/mountbot",
     "name": "MountBot",
