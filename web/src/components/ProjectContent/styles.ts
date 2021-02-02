@@ -18,8 +18,10 @@ export const GridContainer = styled.div`
   grid-template-rows: 10% 30% 60%;
 
   @media (max-width: 767px) {
-    grid-template-areas: 'ImageBlock LinkBlock' 'NameBlock NameBlock' 'DescriptionBlock DescriptionBlock';
-    grid-template-rows: 40% 10% 50%;
+    grid-template-areas: 'ImageBlock ImageBlock' 'LinkBlock NameBlock' 'DescriptionBlock DescriptionBlock';
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 30% 70%;
+
     margin: 20px;
   }
   @media (min-width: 1280px) {
@@ -33,6 +35,8 @@ export const ImageBlock = styled.div`
 
   @media (max-width: 767px) {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
 `
 
@@ -41,6 +45,7 @@ export const GitImage = styled.img`
   max-height: 250px;
 
   @media (max-width: 767px) {
+    height: 100%;
   }
 
   @media (max-width: 420px) {
@@ -102,7 +107,7 @@ export const LinkBlock = styled.div`
   align-items: center;
 
   @media (max-width: 767px) {
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
 `
@@ -110,6 +115,7 @@ export const LinkBlock = styled.div`
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
   width: 400px;
+
   @media (max-width: 767px) {
     width: 100%;
     padding: 0 20px;

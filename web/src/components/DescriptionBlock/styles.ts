@@ -29,10 +29,6 @@ export const backgroundImage = styled(Image)`
 
   @media (min-width: 768px) {
     width: 44vw;
-    height: 40vh;
-  }
-  @media (min-width: 1280px) {
-    width: 44vw;
     height: 67vh;
   }
 `
@@ -49,10 +45,6 @@ export const InfoContainer = styled.div`
     position: absolute;
   }
   @media (min-width: 768px) {
-    width: 44vw;
-    height: 40vh;
-  }
-  @media (min-width: 1280px) {
     width: 44vw;
     height: 67vh;
   }

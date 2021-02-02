@@ -47,12 +47,11 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.colors.black};
   font-size: 1.02vw;
 
-  @media (max-width: 1280px) {
-    font-size: 1.4vw;
+  @media (max-width: 767px) {
+    font-size: 2.5vw;
   }
-
-  @media (max-width: 500px) {
-    font-size: 9px;
+  @media (max-width: 400px) {
+    font-size: 3vw;
   }
 `
 
