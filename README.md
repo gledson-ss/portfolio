@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Your icon here" src="./assets/gledsondev-removebg-preview.png" width="100"/>
+  <img alt="Your icon here" src="./assets/gledsondev-removebg-preview.png" width="220"/>
 </p>
 <h1 align="center">
     Acesse: <a href="https://my-portfolio-mu-nine.vercel.app/" target="_blank">www.gledson.dev<a/>
