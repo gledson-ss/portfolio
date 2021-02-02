@@ -8,6 +8,9 @@ interface arrowContainerProps {
 export const Container = styled.div`
   display: flex;
   /* border: 4px solid blue; */
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 `
 
 export const CarouselContainer = styled.div`
