@@ -15,12 +15,22 @@ export const NameMusicContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 6vw;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
 `
 
 export const BlockName = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /* border: 1px solid blue; */
+  @media (max-width: 767px) {
+    align-items: center;
+  }
 `
 export const MusicListContainer = styled.div`
   display: flex;
