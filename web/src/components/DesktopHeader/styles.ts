@@ -75,18 +75,20 @@ export const Option = styled.button<propsOption>`
   border: none;
   background-color: transparent;
 
+  padding: 0 10px;
+  padding-bottom: 2px;
+
   :focus {
     outline: none;
-    ${underlineOption}
   }
   :hover {
     cursor: pointer;
   }
-  /* ${({ actived }) => {
+  ${({ actived }) => {
     if (actived) {
       return underlineOption
     }
-  }} */
+  }}
 `
 
 export const DescriptionOption = styled.p`
