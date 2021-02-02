@@ -16,7 +16,7 @@ export const GridContainer = styled.div`
   grid-template-areas: 'ImageBlock LinkBlock' 'ImageBlock NameBlock' 'ImageBlock DescriptionBlock';
   grid-template-columns: auto 1fr;
   grid-template-rows: 10% 30% 60%;
-
+  /* border: 1px solid blue; */
   @media (max-width: 767px) {
     grid-template-areas: 'ImageBlock ImageBlock' 'LinkBlock NameBlock' 'DescriptionBlock DescriptionBlock';
     grid-template-rows: 40% 30% 30%;
@@ -44,8 +44,13 @@ export const GitImage = styled.img`
   max-width: 450px;
   max-height: 250px;
 
+  @media (max-width: 767px) {
+    height: 100%;
+  }
+
   @media (max-width: 420px) {
-    width: auto;
+    width: 280px;
+    height: 100%;
   }
 `
 
@@ -110,7 +115,7 @@ export const LinkBlock = styled.div`
 export const DescriptionBlock = styled.div`
   grid-area: DescriptionBlock;
   width: 400px;
-
+  /* border: 1px solid red; */
   @media (max-width: 767px) {
     width: 100%;
     padding: 0 20px;

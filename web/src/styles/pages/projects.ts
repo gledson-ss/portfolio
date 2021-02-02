@@ -33,7 +33,7 @@ export const Block = styled.div<blockProps>`
   display: flex;
   justify-content: ${({ isDislocated }) =>
     isDislocated ? 'flex-start' : 'flex-end'};
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   @media (max-width: 1183px) {
     justify-content: center;
   }

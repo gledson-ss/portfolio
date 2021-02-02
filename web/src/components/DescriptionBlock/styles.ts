@@ -19,17 +19,14 @@ export const Container = styled.div`
 export const ImageContainer = styled.div``
 
 export const backgroundImage = styled(Image)`
-  @media (max-width: 480px) {
-    width: 100%;
-    height: 60vw;
-  }
+  width: 44vw;
+  height: 67vh;
   @media (max-width: 767px) {
     position: absolute;
   }
-
-  @media (min-width: 768px) {
-    width: 44vw;
-    height: 67vh;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 60vw;
   }
 `
 

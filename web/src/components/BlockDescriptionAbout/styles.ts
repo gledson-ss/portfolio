@@ -16,6 +16,7 @@ export const InformationBlock = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
   @media (min-width: 1280px) {
     width: 40vw;
   }
