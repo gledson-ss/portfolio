@@ -13,14 +13,14 @@ const fontProza = css`
 `
 
 export const Container = styled.div`
-  display: none;
-  @media (min-width: 768px) {
-    display: flex;
-    height: 10vh;
-    padding: 0 100px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  display: flex;
+  height: 10vh;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @media (max-width: 768px) {
+    display: none;
   }
 `
 

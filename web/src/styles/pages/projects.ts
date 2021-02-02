@@ -44,6 +44,8 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: -140px;
+
   @media (max-width: 767px) {
     margin: 0;
   }
@@ -56,6 +58,7 @@ export const Button = styled.button`
   border: 1px solid ${({ theme }) => theme.colors.orange};
   border-radius: 28px;
   cursor: pointer;
+  z-index: 999;
   :focus {
     outline: none;
   }
