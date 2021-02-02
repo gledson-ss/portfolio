@@ -23,7 +23,7 @@ export const ProjectsBlock = styled.div`
   margin-right: 100px;
   margin-top: 100px;
   margin-bottom: 40px;
-
+  /* border: 1px solid blue; */
   @media (max-width: 767px) {
     margin: 0;
   }
@@ -33,9 +33,12 @@ export const Block = styled.div<blockProps>`
   display: flex;
   justify-content: ${({ isDislocated }) =>
     isDislocated ? 'flex-start' : 'flex-end'};
-
+  border: 1px solid blue;
   @media (max-width: 1183px) {
     justify-content: center;
+  }
+  @media (max-width: 767px) {
+    height: 380px;
   }
 `
 
@@ -47,7 +50,7 @@ export const ButtonContainer = styled.div`
   margin-bottom: -140px;
 
   @media (max-width: 767px) {
-    margin: 0;
+    margin: 50px;
   }
 `
 

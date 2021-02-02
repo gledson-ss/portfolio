@@ -44,13 +44,8 @@ export const GitImage = styled.img`
   max-width: 450px;
   max-height: 250px;
 
-  @media (max-width: 767px) {
-    height: 100%;
-  }
-
   @media (max-width: 420px) {
-    width: 280px;
-    height: 100%;
+    width: auto;
   }
 `
 
