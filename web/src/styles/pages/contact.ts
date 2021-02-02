@@ -4,8 +4,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  @media (min-width: 720px) {
-    padding: 0 100px;
+  padding: 0 100px;
+
+  @media (max-width: 720px) {
+    padding: 0;
   }
 `
 export const TopImageContainer = styled.div`
