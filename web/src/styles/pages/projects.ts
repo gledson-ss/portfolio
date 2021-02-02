@@ -33,11 +33,12 @@ export const Block = styled.div<blockProps>`
   display: flex;
   justify-content: ${({ isDislocated }) =>
     isDislocated ? 'flex-start' : 'flex-end'};
-  /* border: 1px solid blue; */
+  /* border: 1px solid violet; */
   @media (max-width: 1183px) {
     justify-content: center;
   }
   @media (max-width: 767px) {
+    margin-top: 40px;
     height: 380px;
   }
 `
@@ -48,9 +49,10 @@ export const ButtonContainer = styled.div`
   align-items: center;
   margin-top: 100px;
   margin-bottom: -140px;
-
+  /* border: 1px solid red; */
   @media (max-width: 767px) {
-    margin: 50px;
+    height: 100px;
+    margin-top: 20px;
   }
 `
 
