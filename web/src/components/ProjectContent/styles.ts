@@ -49,7 +49,7 @@ export const GitImage = styled.img`
   }
 
   @media (max-width: 420px) {
-    width: 280px;
+    width: 200px;
     height: 100%;
   }
 `
