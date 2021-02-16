@@ -86,7 +86,7 @@ export const GuitarContainer = styled.div`
   margin: 80px 0;
   @media (max-width: 767px) {
     flex-direction: column;
-    height: 80%;
+    margin-bottom: 0;
   }
 `
 
