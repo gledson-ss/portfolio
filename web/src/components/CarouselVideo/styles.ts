@@ -93,11 +93,11 @@ export const ArrowRightIcon = styled(FaAngleRight)`
   }
 `
 
-export const VideoContainer = styled.div`
+export const Screen = styled.div`
   /* border: 4px solid green; */
 `
 
-export const Video = styled.iframe`
+export const Music = styled.iframe`
   width: 28vw;
   height: 30vh;
   border: 10px solid ${({ theme }) => theme.colors.blue};

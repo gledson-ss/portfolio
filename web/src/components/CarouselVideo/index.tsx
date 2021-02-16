@@ -3,7 +3,7 @@ import React from 'react'
 import * as St from './styles'
 
 interface CarouselVideoProps {
-  isVideo?: boolean
+  isMusic?: boolean
   media?: string
   name?: string
   setIndexArray?: React.Dispatch<React.SetStateAction<number>>
@@ -12,7 +12,7 @@ interface CarouselVideoProps {
 }
 
 const CarouselVideo: React.FC<CarouselVideoProps> = ({
-  isVideo,
+  isMusic,
   media,
   name,
   setIndexArray,
@@ -42,12 +42,12 @@ const CarouselVideo: React.FC<CarouselVideoProps> = ({
               <St.ArrowLeftIcon />
             </St.ArrowButton>
           </St.ArrowContainer>
-          <St.VideoContainer>
+          <St.Screen>
             <St.TitleContainer>
               <St.Title>{name}</St.Title>
             </St.TitleContainer>
-            {isVideo ? <St.Video src={media} /> : <St.Image src={media} />}
-          </St.VideoContainer>
+            {isMusic ? <St.Music src={media} /> : <St.Image src={media} />}
+          </St.Screen>
           <St.ArrowContainer side="right">
             <St.ArrowButton onClick={() => growUpIndexArray()}>
               <St.ArrowRightIcon />

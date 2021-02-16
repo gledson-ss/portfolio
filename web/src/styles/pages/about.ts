@@ -26,6 +26,15 @@ export const SkillsMusicContainer = styled.div`
   }
 `
 
+export const SectionMusicContainer = styled.div`
+  height: 60vh;
+  position: relative;
+  /* border: 2px solid blue; */
+  @media (max-width: 767px) {
+    margin: 60px 0;
+  }
+`
+
 export const SkillsMusicVectorContainer = styled.div`
   height: 70vh;
   right: 0;
@@ -172,20 +181,13 @@ export const DescriptionBlock = styled.p`
   font-family: open;
   color: ${({ theme }) => theme.colors.black};
 `
-export const MusicVideoSectionContainer = styled.div`
+export const CarouselContainer = styled.div`
   display: flex;
   align-items: flex-end;
+  /* @media (max-width: 767px) {
+    width: 100%;
+  } */
   /* border: 3px solid blue; */
-`
-
-export const SectionMusicContainer = styled.div`
-  height: 60vh;
-
-  position: relative;
-  /* border: 2px solid blue; */
-  @media (max-width: 767px) {
-    margin: 60px 0;
-  }
 `
 
 export const LateralImageLeft = styled(Image)`

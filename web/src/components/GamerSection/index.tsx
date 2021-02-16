@@ -4,7 +4,7 @@ import GamesJson from '../../utils/games.json'
 import CarouselVideo from '../CarouselVideo'
 import * as St from './styles'
 const GamerSection: React.FC = () => {
-  const [gamesArray, setGamesArray] = useState(Object.entries(GamesJson))
+  const [gamesArray] = useState(Object.entries(GamesJson))
   const [index, setIndex] = useState<number>(0)
 
   return (
@@ -32,6 +32,7 @@ const GamerSection: React.FC = () => {
           setIndexArray={setIndex}
           indexArray={index}
           sizeArray={gamesArray.length - 1}
+          isMusic={false}
         />
       </St.CorouselContainer>
     </St.Container>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import BlockDescriptionAbout from '../components/BlockDescriptionAbout'
 import CarouselVideo from '../components/CarouselVideo'
@@ -8,7 +8,10 @@ import HeaderContainer from '../components/HeaderDescription'
 import MusicPlaylist from '../components/MusicPlaylist'
 import TechnologiSection from '../components/TechnologiSection'
 import * as St from '../styles/pages/about'
+import MusicJson from '../utils/sheetMusic.json'
 const About: React.FC = () => {
+  const [musicArray] = useState(Object.entries(MusicJson))
+  const [index, setIndex] = useState<number>(0)
   return (
     <St.Container>
       <BlockDescriptionAbout />
@@ -54,14 +57,22 @@ const About: React.FC = () => {
                   particular e estudo música por prazer. Durante muitos anos
                   venho estudando e praticando técnicas para executar uma música
                   de boa qualidade, aprendendo música clássica, erudita,
-                  contemporanea e etc.
+                  contemporanea e etc. Veja algumas partituras que já estudei.
                 </St.DescriptionBlock>
               </St.DescriptionBlockContainer>
             </St.MusicTextContainer>
           </St.BlockGuitar>
-          <St.MusicVideoSectionContainer>
-            <CarouselVideo />
-          </St.MusicVideoSectionContainer>
+          <St.CarouselContainer>
+            <CarouselVideo
+              key={musicArray[index][1].name}
+              name={musicArray[index][1].name}
+              media={musicArray[index][1].media}
+              setIndexArray={setIndex}
+              indexArray={index}
+              sizeArray={musicArray.length - 1}
+              isMusic={true}
+            />
+          </St.CarouselContainer>
         </St.GuitarContainer>
       </St.SkillsMusicContainer>
       <St.SectionMusicContainer>
