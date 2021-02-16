@@ -108,8 +108,7 @@ export const Music = styled.iframe`
     height: 35vh;
   }
   @media (max-width: 920px) {
-    width: 50vw;
-    height: 35vh;
+    width: 100%;
   }
 `
 
