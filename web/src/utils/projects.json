@@ -7,7 +7,7 @@
     "position": true
   },
   "owlify": {
-    "description": "Sistema de análise de temperatura e umidade de vacinas, utilizando um App mobile, feito com React Native para receber os dados de um servidor implementado em Node.js e mostrar na tela as informações da vacina.",
+    "description": "Sistema de análise de temperatura e umidade de vacinas, utilizando um App mobile, feito com React Native, para receber os dados de um servidor implementado em Node.js e mostrar na tela as informações da vacina.",
     "image": "/photos/projects/owlify.png",
     "linkRepo": "https://github.com/gledson-ss",
     "name": "Owlify",
