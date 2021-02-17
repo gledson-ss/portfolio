@@ -16,7 +16,7 @@ const DescriptionBlock: React.FC = () => {
           <St.Text>Olá, meu nome é Gledson.</St.Text>
           <St.Text>Sou desenvolvedor fullstack</St.Text>
           <St.Text>Desenvolvo projetos na área</St.Text>
-          <St.Text>de software e hardware, sempre</St.Text>
+          <St.Text>de web e mobile, sempre</St.Text>
           <St.Text>buscando me atualizar sobre as</St.Text>
           <St.Text>tecnologias mais relevantes.</St.Text>
           <St.Text id="LineNextJs">
