@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               <St.TitleBlock>Whatsapp</St.TitleBlock>
             </St.TitleBlockContainer>
             <St.DescriptionBlockContainer>
-              <St.DescriptionBlock>+55 (83) 86296286</St.DescriptionBlock>
+              <St.DescriptionBlock>+55 (83) 98839-5259</St.DescriptionBlock>
             </St.DescriptionBlockContainer>
           </St.WhatsappBlock>
           <St.AuthorBlock>

@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
               <St.Title>Whatsapp</St.Title>
             </St.TitleContainer>
             <St.DescriptionContainer>
-              <St.TextDescription>+55 (83) 86296286</St.TextDescription>
+              <St.TextDescription>+55 (83) 98839-5259</St.TextDescription>
             </St.DescriptionContainer>
           </St.BlockContaint>
           <St.BlockContaint>
