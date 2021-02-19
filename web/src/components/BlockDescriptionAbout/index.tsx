@@ -13,7 +13,9 @@ const BlockDescriptionAbout: React.FC = () => {
             e eletrônica, desenvolvendo projetos envolvendo frontend, backend,
             mobile e microcontroladores. Começei a entrar no mundo da
             programação no início de 2018, e, desde então, venho aprimorando os
-            conhecimentos na área de tecnologia. Já fui instrutor e participante
+            conhecimentos na área de tecnologia. No segundo semestre de 2019,
+            iniciei um ciclo de trabalhos com projetos no laboratório ASSERT do
+            IFPB em campina grande. Além disso, já fui instrutor e participante
             de olimpíadas de programação. Ademais, na área de software, crio e
             projeto aplicações de web sites, apps desktop e mobile, já na area
             de hardware , tenho expericia em atividades no âmbito de sistemas
