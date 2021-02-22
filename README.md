@@ -2,7 +2,7 @@
   <img alt="Your icon here" src="./assets-README/gledsondev-removebg-preview.png" width="320"/>
 </p>
 <h1 align="center">
-    Acesse: <a href="https://my-portfolio-mu-nine.vercel.app/" target="_blank">www.gledson.dev<a/>
+    Acesse: <a href="https://www.gledson.dev" target="_blank">www.gledson.dev<a/>
 </h1>
 
 
