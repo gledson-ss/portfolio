@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               <St.TitleBlock>Contato</St.TitleBlock>
             </St.TitleBlockContainer>
             <St.DescriptionBlockContainer>
-              <St.DescriptionBlock>contato@gledson.dev</St.DescriptionBlock>
+              <St.DescriptionBlock>dev.gledson@gmail.com</St.DescriptionBlock>
             </St.DescriptionBlockContainer>
           </St.ContactBlock>
           <St.WhatsappBlock>

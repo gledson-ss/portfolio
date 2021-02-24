@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
               <St.Title>Meu e-mail</St.Title>
             </St.TitleContainer>
             <St.DescriptionContainer>
-              <St.TextDescription>contato@gledson.dev</St.TextDescription>
+              <St.TextDescription>dev.gledson@gmail.com</St.TextDescription>
             </St.DescriptionContainer>
           </St.BlockContaint>
           <St.BlockContaint>
