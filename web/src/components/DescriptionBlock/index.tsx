@@ -14,10 +14,10 @@ const DescriptionBlock: React.FC = () => {
       <St.InfoContainer>
         <St.TextContainer>
           <St.Text>Olá, meu nome é Gledson.</St.Text>
-          <St.Text>Desenvolvo projetos na área</St.Text>
-          <St.Text>de web e mobile, sempre</St.Text>
-          <St.Text>buscando me atualizar sobre as</St.Text>
-          <St.Text>tecnologias mais relevantes.</St.Text>
+          <St.Text>Sou desenvolvedor de projetos</St.Text>
+          <St.Text>front-end e back-end, sempre</St.Text>
+          <St.Text>buscando me atualizar sobre</St.Text>
+          <St.Text>as tecnologias mais relevantes.</St.Text>
           <St.Text id="LineNextJs">
             Desenvolvi este site utilizando Next.js
           </St.Text>
